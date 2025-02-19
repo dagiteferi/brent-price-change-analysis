@@ -1,21 +1,21 @@
 import os
 import logging
 import pandas as pd
-import numpy as np
 
 # Set up logging
 logger = logging.getLogger('EDA Logger')
 logger.setLevel(logging.DEBUG)
 
 # Ensure logs directory exists
-os.makedirs("../logs", exist_ok=True)
+log_dir = "../logs"
+os.makedirs(log_dir, exist_ok=True)
 
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,  # Log level
     format="%(asctime)s - %(levelname)s - %(message)s",
     handlers=[
-        logging.FileHandler("../logs/eda.log"),  # Save logs to file
+        logging.FileHandler(os.path.join(log_dir, 'eda.log')),  # Save logs to file
         logging.StreamHandler()  # Print logs in console
     ]
 )
