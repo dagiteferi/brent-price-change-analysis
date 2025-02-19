@@ -114,23 +114,22 @@ To model these factors:
 - **GARCH will analyze price volatility.**  
 - **Bayesian methods will detect structural breaks in price movements.**  
 
-📌 **Example:** If OPEC announces a production cut, prices may **rise sharply**. I will use change point detection methods to identify these significant shifts in price behavior.  
 
 ---
 
-## ✅ 4. Expected Outputs & Limitations  
+## **4️⃣ Expected Outputs & Limitations**  
 
-### 📊 Expected Outputs  
+### **📊 Expected Outputs**  
 By applying these models, I aim to:  
 - Forecast **future Brent oil prices** based on historical data.  
 - Identify **key change points** in price movements.  
 - Assess **volatility levels** to understand market risk.  
 
-### ⚠️ Limitations to Consider  
+### **⚠️ Limitations to Consider**  
 - **ARIMA assumes stationarity**, but oil prices are affected by unexpected global events.  
 - **GARCH models price volatility**, but requires careful parameter tuning.  
 - **Change point detection methods depend on assumptions** that might not always hold.  
-- **Macroeconomic and political factors are unpredictable**, impacting the accuracy of forecasts.  
+- **Macroeconomic and political factors are unpredictable**, impacting the accuracy of forecasts.    
 
 ---
 
