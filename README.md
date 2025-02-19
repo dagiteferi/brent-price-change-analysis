@@ -1,4 +1,4 @@
-# brent-price-change-analysis and Statistical Modeling of Brent Oil Prices 🌍📈
+# Brent Price Change Analysis and Statistical Modeling of Brent Oil Prices 🌍📈
 
 ## Table of Contents 📚
 
