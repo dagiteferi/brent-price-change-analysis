@@ -1,6 +1,8 @@
 import os
 import logging
 import pandas as pd
+import matplotlib.pyplot as plt
+from statsmodels.tsa.stattools import adfuller
 
 # Define the log directory and file path
 log_dir = "../logs"
@@ -23,8 +25,6 @@ logging.basicConfig(
     ]
 )
 
-
-
 def check_missing_values(data):
     """
     Check for missing values in the dataset.
@@ -42,8 +42,6 @@ def check_missing_values(data):
     logger.info(missing_values)
     return missing_values
 
-
-
 def check_duplicates(data):
     """
     Check for duplicate rows in the dataset.
@@ -59,8 +57,6 @@ def check_duplicates(data):
     duplicates = data.duplicated().sum()
     logger.info(f"Number of duplicate rows: {duplicates}")
     return duplicates
-
-
 
 def check_outliers(data, column="Price"):
     """
