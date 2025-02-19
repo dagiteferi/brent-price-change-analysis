@@ -42,28 +42,7 @@ def check_missing_values(data):
     logger.info(missing_values)
     return missing_values
 
-def handle_missing_values(data, method="interpolate"):
-    """
-    Handle missing values in the dataset.
-    
-    Parameters:
-    -----------
-    data (pd.DataFrame): The dataset to process.
-    method (str): Method to handle missing values. Options: "interpolate", "drop".
-    
-    Returns:
-    --------
-    pd.DataFrame: The dataset with missing values handled.
-    """
-    if method == "interpolate":
-        logger.info("Interpolating missing values.")
-        data.interpolate(method="linear", inplace=True)
-    elif method == "drop":
-        logger.info("Dropping missing values.")
-        data.dropna(inplace=True)
-    else:
-        logger.warning(f"Unknown method: {method}. No action taken.")
-    return data
+
 
 def check_duplicates(data):
     """
