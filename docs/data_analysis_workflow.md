@@ -133,5 +133,5 @@ By applying these models, I aim to:
 
 ---
 
-
+By following this workflow, I aim to deliver actionable insights into Brent oil price trends and volatility, while effectively communicating results to stakeholders.
 
