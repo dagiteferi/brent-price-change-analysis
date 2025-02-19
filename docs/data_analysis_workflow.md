@@ -43,3 +43,67 @@ To analyze Brent oil prices and detect change points effectively, I used the fol
 - Present insights through:  
   - **Interactive Dashboard (Flask + React)** to visualize trends and predictions.  
   - **Blog Report** summarizing key findings, making it accessible to both technical and non-technical audiences.  
+
+
+
+
+  # 📊 Understanding the Model and Data  
+
+To effectively analyze Brent oil prices, I will use various time series models and understand how the data is generated. This section outlines the approach I will take.  
+
+---
+
+## 📚 1. Reviewing Key References  
+Before implementing any models, I will:  
+- Read **research papers and books** on time series forecasting.  
+
+---
+
+## 🔢 2. Choosing Suitable Models for Time Series Analysis  
+
+I will use the following models to analyze oil price fluctuations:  
+
+### 🔹 ARIMA (AutoRegressive Integrated Moving Average)  
+- **Why?** ARIMA is useful for forecasting price trends based on historical patterns.  
+- **How?** I will fit an ARIMA model and evaluate its ability to predict price movements.  
+
+### 🔹 GARCH (Generalized Autoregressive Conditional Heteroskedasticity)  
+- **Why?** Oil prices exhibit volatility, and GARCH models this volatility effectively.  
+- **How?** I will use GARCH to measure and predict price fluctuations over time.  
+
+### 🔹 Bayesian Change Point Detection  
+- **Why?** This method helps identify significant shifts in price trends due to external events.  
+- **How?** I will implement Bayesian models using PyMC3 to detect these change points.  
+
+---
+
+## 🔍 3. Understanding How These Models Represent Data  
+
+Brent oil prices are influenced by factors like **supply-demand dynamics, OPEC decisions, global crises, and market speculation**.  
+To model these factors:  
+- **ARIMA will help capture price trends and seasonality.**  
+- **GARCH will analyze price volatility.**  
+- **Bayesian methods will detect structural breaks in price movements.**  
+
+📌 **Example:** If OPEC announces a production cut, prices may **rise sharply**. I will use change point detection methods to identify these significant shifts in price behavior.  
+
+---
+
+## ✅ 4. Expected Outputs & Limitations  
+
+### 📊 Expected Outputs  
+By applying these models, I aim to:  
+- Forecast **future Brent oil prices** based on historical data.  
+- Identify **key change points** in price movements.  
+- Assess **volatility levels** to understand market risk.  
+
+### ⚠️ Limitations to Consider  
+- **ARIMA assumes stationarity**, but oil prices are affected by unexpected global events.  
+- **GARCH models price volatility**, but requires careful parameter tuning.  
+- **Change point detection methods depend on assumptions** that might not always hold.  
+- **Macroeconomic and political factors are unpredictable**, impacting the accuracy of forecasts.  
+
+---
+
+
+
