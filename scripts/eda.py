@@ -96,3 +96,71 @@ def save_cleaned_data(data, file_path):
     except Exception as e:
         logger.error(f"Error saving cleaned data: {e}")
         raise e
+
+
+
+
+
+def plot_historical_prices(data):
+    """
+    Plot historical Brent oil prices.
+    
+    Parameters:
+    -----------
+    data (pd.DataFrame): The dataset containing the 'Price' column.
+    """
+    plt.figure(figsize=(12, 6))
+    plt.plot(data.index, data["Price"], label="Brent Oil Prices", color="blue")
+    plt.title("Historical Brent Oil Prices (1987 - 2022)")
+    plt.xlabel("Date")
+    plt.ylabel("Price (USD per barrel)")
+    plt.legend()
+    plt.grid()
+    plt.show()
+
+def plot_rolling_statistics(data):
+    """
+    Plot rolling mean and standard deviation of Brent oil prices.
+    
+    Parameters:
+    -----------
+    data (pd.DataFrame): The dataset containing the 'Price' column.
+    """
+    # Calculate rolling mean and standard deviation
+    data["Rolling Mean"] = data["Price"].rolling(window=30).mean()
+    data["Rolling Std"] = data["Price"].rolling(window=30).std()
+
+    # Plot rolling statistics
+    plt.figure(figsize=(12, 6))
+    plt.plot(data.index, data["Price"], label="Brent Oil Prices", color="blue")
+    plt.plot(data.index, data["Rolling Mean"], label="Rolling Mean", color="red")
+    plt.plot(data.index, data["Rolling Std"], label="Rolling Std", color="green")
+    plt.title("Rolling Mean and Standard Deviation of Brent Oil Prices")
+    plt.xlabel("Date")
+    plt.ylabel("Price (USD per barrel)")
+    plt.legend()
+    plt.grid()
+    plt.show()
+
+def check_stationarity(data, column="Price"):
+    """
+    Check for stationarity using the Augmented Dickey-Fuller (ADF) test.
+    
+    Parameters:
+    -----------
+    data (pd.DataFrame): The dataset containing the column to check.
+    column (str): The column to check for stationarity.
+    
+    Returns:
+    --------
+    dict: ADF test results.
+    """
+    result = adfuller(data[column])
+    logger.info(f"ADF Statistic: {result[0]}")
+    logger.info(f"p-value: {result[1]}")
+    logger.info(f"Critical Values: {result[4]}")
+    return {
+        "ADF Statistic": result[0],
+        "p-value": result[1],
+        "Critical Values": result[4]
+    }
