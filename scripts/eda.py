@@ -20,26 +20,7 @@ logging.basicConfig(
     ]
 )
 
-def load_data(file_path):
-    """
-    Load the dataset from the given file path.
-    
-    Parameters:
-    -----------
-    file_path (str): Path to the dataset file.
-    
-    Returns:
-    --------
-    pd.DataFrame: The loaded dataset.
-    """
-    try:
-        logger.info(f"Loading data from: {file_path}")
-        data = pd.read_csv(file_path, parse_dates=["Date"], index_col="Date")
-        logger.info("Data loaded successfully.")
-        return data
-    except Exception as e:
-        logger.error(f"Error loading data: {e}")
-        raise e
+
 
 def check_missing_values(data):
     """
