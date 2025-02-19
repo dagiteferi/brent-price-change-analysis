@@ -169,6 +169,8 @@ def check_stationarity(data, column="Price"):
 
 
 
+
+
 def plot_price_trend_over_years(data):
     """
     Plot a bar chart showing the average Brent oil price trend over the years.
@@ -182,19 +184,23 @@ def plot_price_trend_over_years(data):
         data.index = pd.to_datetime(data.index)
     
     # Aggregate average price per year
-    yearly_avg_price = data["Price"].resample("Y").mean().reset_index()
+    yearly_avg_price = data["Price"].resample("YE").mean().reset_index()
     yearly_avg_price["Year"] = yearly_avg_price["Date"].dt.year
 
     # Plot the bar chart using Seaborn
     plt.figure(figsize=(12, 6))
-    sns.barplot(x='Year', y='Price', data=yearly_avg_price, palette='viridis')
+    sns.barplot(x='Year', y='Price', data=yearly_avg_price, hue='Year', palette='viridis', dodge=False)
     plt.title('Average Yearly Brent Oil Prices', fontsize=16)
     plt.xlabel('Year', fontsize=14)
     plt.ylabel('Average Price (USD per barrel)', fontsize=14)
     plt.xticks(rotation=45)
     plt.grid(axis='y')
+    plt.legend().set_visible(False)  # Hide the legend since 'hue' is used for colors only
     plt.tight_layout()
     plt.show()
+
+
+
 
 
 
