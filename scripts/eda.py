@@ -60,21 +60,7 @@ def check_duplicates(data):
     logger.info(f"Number of duplicate rows: {duplicates}")
     return duplicates
 
-def remove_duplicates(data):
-    """
-    Remove duplicate rows from the dataset.
-    
-    Parameters:
-    -----------
-    data (pd.DataFrame): The dataset to process.
-    
-    Returns:
-    --------
-    pd.DataFrame: The dataset with duplicates removed.
-    """
-    logger.info("Removing duplicate rows.")
-    data.drop_duplicates(inplace=True)
-    return data
+
 
 def check_outliers(data, column="Price"):
     """
