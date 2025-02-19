@@ -1,6 +1,7 @@
 import os
 import logging
 import pandas as pd
+import seaborn as sns
 import matplotlib.pyplot as plt
 from statsmodels.tsa.stattools import adfuller
 
@@ -166,7 +167,7 @@ def check_stationarity(data, column="Price"):
     }
 
 
-import matplotlib.pyplot as plt
+
 
 def plot_price_trend_over_years(data):
     """
@@ -181,16 +182,18 @@ def plot_price_trend_over_years(data):
         data.index = pd.to_datetime(data.index)
     
     # Aggregate average price per year
-    yearly_avg_price = data["Price"].resample("Y").mean()
+    yearly_avg_price = data["Price"].resample("Y").mean().reset_index()
+    yearly_avg_price["Year"] = yearly_avg_price["Date"].dt.year
 
-    # Plot the bar chart
+    # Plot the bar chart using Seaborn
     plt.figure(figsize=(12, 6))
-    plt.bar(yearly_avg_price.index.year, yearly_avg_price, color="blue", alpha=0.7)
-    plt.title("Average Brent Oil Price Trend Over Years")
-    plt.xlabel("Year")
-    plt.ylabel("Average Price (USD per barrel)")
+    sns.barplot(x='Year', y='Price', data=yearly_avg_price, palette='viridis')
+    plt.title('Average Yearly Brent Oil Prices', fontsize=16)
+    plt.xlabel('Year', fontsize=14)
+    plt.ylabel('Average Price (USD per barrel)', fontsize=14)
     plt.xticks(rotation=45)
-    plt.grid(axis="y", linestyle="--", alpha=0.7)
+    plt.grid(axis='y')
+    plt.tight_layout()
     plt.show()
 
 
