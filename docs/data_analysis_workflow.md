@@ -1,12 +1,19 @@
-## 📝 The Data Analysis Workflow  
+# 📝 The Data Analysis Workflow  
 
-To analyze Brent oil prices and detect change points effectively, I used the following approach:  
+To analyze Brent oil prices and detect change points effectively, I used the following approach:
+- **Objective**:  
+  - Identify significant change points in Brent oil prices over time.  
+  - Forecast future oil price trends and volatility.  
+  - Correlate price changes with real-world events.  
 
-### **1️⃣ Data Collection & Understanding the Dataset**  
+---
+
+## **1️⃣ Data Collection & Understanding the Dataset**  
 - The dataset used is **BrentOilPrices.csv** (1987 - 2022).  
 - It contains:  
   - **Date**: The day oil prices were recorded.  
   - **Price**: Brent crude oil price (USD per barrel).  
+ 
 
 ### **2️⃣ Data Preprocessing** 🧹  
 - Check for missing values and handle them appropriately.  
@@ -28,21 +35,22 @@ To analyze Brent oil prices and detect change points effectively, I used the fol
   - **GARCH (Generalized Autoregressive Conditional Heteroskedasticity)**  
   - **Bayesian Methods (PyMC3)** for probabilistic trend detection.  
 
-### **5️⃣ Model Evaluation & Selection** ✅  
+## **5️⃣ Model Evaluation & Selection** ✅  
 - Compare models using **evaluation metrics** such as:  
   - **AIC/BIC** (Akaike and Bayesian Information Criteria)  
   - **RMSE (Root Mean Squared Error)**  
   - **MAPE (Mean Absolute Percentage Error)**  
-- Select the best-performing model for predicting oil price fluctuations.  
+- Perform **cross-validation** to assess model robustness.  
+- Select the best-performing model for predicting oil price fluctuations.   
 
 ### **6️⃣ Interpretation of Findings & Insights** 🔍  
 - Correlate **change points** with real-world events (e.g., political, economic, and regulatory changes).  
 - Identify how external factors such as **OPEC decisions, economic sanctions, and geopolitical events** impact oil prices.  
 
-### **7️⃣ Communicating Results to Stakeholders** 📢  
+## **7️⃣ Communicating Results to Stakeholders** 📢  
 - Present insights through:  
-  - **Interactive Dashboard (Flask + React)** to visualize trends and predictions.  
-  - **Blog Report** summarizing key findings, making it accessible to both technical and non-technical audiences.  
+  - **Interactive Dashboard (Flask + React)**: Visualize trends, change points, and forecasts.  
+  - **Blog Report**: Summarize key findings, making it accessible to both technical and non-technical audiences. 
 
 
 
