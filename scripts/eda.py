@@ -246,3 +246,38 @@ def plot_with_events(data):
     plt.grid()
 
     plt.show()
+
+
+from statsmodels.tsa.seasonal import seasonal_decompose
+
+def plot_time_series_decomposition(data, column="Price", model="multiplicative"):
+    """
+    Decompose the time series into trend, seasonality, and residuals.
+    
+    Parameters:
+    -----------
+    data (pd.DataFrame): The dataset containing the column to analyze.
+    column (str): The column to decompose.
+    model (str): Type of decomposition ("additive" or "multiplicative").
+    """
+    decomposition = seasonal_decompose(data[column], model=model, period=365)  # Assuming daily data
+    
+    plt.figure(figsize=(12, 8))
+    plt.subplot(4, 1, 1)
+    plt.plot(data[column], label="Original")
+    plt.legend()
+
+    plt.subplot(4, 1, 2)
+    plt.plot(decomposition.trend, label="Trend", color="red")
+    plt.legend()
+
+    plt.subplot(4, 1, 3)
+    plt.plot(decomposition.seasonal, label="Seasonality", color="green")
+    plt.legend()
+
+    plt.subplot(4, 1, 4)
+    plt.plot(decomposition.resid, label="Residuals", color="purple")
+    plt.legend()
+
+    plt.tight_layout()
+    plt.show()
