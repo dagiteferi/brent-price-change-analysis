@@ -164,3 +164,76 @@ def check_stationarity(data, column="Price"):
         "p-value": result[1],
         "Critical Values": result[4]
     }
+
+
+import matplotlib.pyplot as plt
+
+def plot_price_trend_over_years(data):
+    """
+    Plot a bar chart showing the average Brent oil price trend over the years.
+    
+    Parameters:
+    -----------
+    data (pd.DataFrame): The dataset containing the 'Price' column with 'Date' as the index.
+    """
+    # Ensure the index is datetime
+    if not isinstance(data.index, pd.DatetimeIndex):
+        data.index = pd.to_datetime(data.index)
+    
+    # Aggregate average price per year
+    yearly_avg_price = data["Price"].resample("Y").mean()
+
+    # Plot the bar chart
+    plt.figure(figsize=(12, 6))
+    plt.bar(yearly_avg_price.index.year, yearly_avg_price, color="blue", alpha=0.7)
+    plt.title("Average Brent Oil Price Trend Over Years")
+    plt.xlabel("Year")
+    plt.ylabel("Average Price (USD per barrel)")
+    plt.xticks(rotation=45)
+    plt.grid(axis="y", linestyle="--", alpha=0.7)
+    plt.show()
+
+
+
+
+def plot_with_events(data):
+    """
+    Plot Brent oil prices with significant event markers as vertical dashed lines.
+    
+    Parameters:
+    -----------
+    data (pd.DataFrame): The dataset containing the 'Price' column with 'Date' as the index.
+    """
+
+    # Dictionary of significant events
+    significant_events = {
+        '1990-08-02': 'Start-Gulf War',
+        '1991-02-28': 'End-Gulf War',
+        '2001-09-11': '9/11 Terrorist Attacks',
+        '2003-03-20': 'Invasion of Iraq',
+        '2005-07-07': 'London Terrorist Attack',
+        '2010-12-18': 'Start-Arab Spring',
+        '2011-02-17': 'Civil War in Libya Start',
+        '2015-11-13': 'Paris Terrorist Attacks',
+        '2019-12-31': 'Attack on US Embassy in Iraq',
+        '2022-02-24': 'Russian Invasion of Ukraine',
+    }
+
+    plt.figure(figsize=(14, 7))
+
+    # Plot Brent oil prices using the index (Date)
+    plt.plot(data.index, data['Price'], label='Brent Oil Price', color='blue')
+
+    # Add vertical dashed lines for events
+    for date, event in significant_events.items():
+        event_date = pd.to_datetime(date)
+        plt.axvline(event_date, color='r', linestyle='--', linewidth=1.5, label=f'{event} ({date})')
+
+    # Formatting
+    plt.title('Brent Oil Price Over Time with Event Markers')
+    plt.xlabel('Date')
+    plt.ylabel('Price (USD per barrel)')
+    plt.legend(loc='best', fontsize=9)
+    plt.grid()
+
+    plt.show()
