@@ -81,6 +81,29 @@ def check_outliers(data, column="Price"):
     logger.info(f"Number of outliers in '{column}': {len(outliers)}")
     return outliers
 
+def check_stationarity(data, column="Price"):
+    """
+    Check for stationarity using the Augmented Dickey-Fuller (ADF) test.
+    
+    Parameters:
+    -----------
+    data (pd.DataFrame): The dataset containing the column to check.
+    column (str): The column to check for stationarity.
+    
+    Returns:
+    --------
+    dict: ADF test results.
+    """
+    result = adfuller(data[column])
+    logger.info(f"ADF Statistic: {result[0]}")
+    logger.info(f"p-value: {result[1]}")
+    logger.info(f"Critical Values: {result[4]}")
+    return {
+        "ADF Statistic": result[0],
+        "p-value": result[1],
+        "Critical Values": result[4]
+    }
+
 def save_cleaned_data(data, file_path):
     """
     Save the cleaned dataset to a file.
