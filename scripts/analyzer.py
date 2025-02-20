@@ -31,16 +31,38 @@ significant_events = {
 }
 
 def get_prices_around_event(df, event_date, days_before=180, days_after=180):
+    """
+    Extract Brent oil prices for a specified period before and after an event.
+
+    Parameters:
+    -----------
+    df (pd.DataFrame): The dataset containing the 'Price' column with 'Date' as the index.
+    event_date (pd.Timestamp): The date of the event.
+    days_before (int): Number of days before the event to include.
+    days_after (int): Number of days after the event to include.
+
+    Returns:
+    --------
+    pd.DataFrame: A subset of the DataFrame containing prices around the event.
+    """
     start_date = event_date - timedelta(days=days_before)
     end_date = event_date + timedelta(days=days_after)
     return df.loc[start_date:end_date]
 
 def analyze_events(df):
+    """
+    Analyze the impact of significant events on Brent oil prices.
+
+    Parameters:
+    -----------
+    df (pd.DataFrame): The dataset containing the 'Price' column with 'Date' as the index.
+    """
     results = []
     for date_str, event_name in significant_events.items():
         event_date = pd.to_datetime(date_str)
         prices_around_event = get_prices_around_event(df, event_date)
 
+        # Calculate percentage changes
         try:
             nearest_before_1m = df.index[df.index <= event_date - timedelta(days=30)][-1]
             nearest_after_1m = df.index[df.index >= event_date + timedelta(days=30)][0]
@@ -68,20 +90,23 @@ def analyze_events(df):
         except (IndexError, KeyError):
             change_6m = None
 
+        # Calculate cumulative returns
         if not prices_around_event.empty:
             try:
                 prices_before = prices_around_event.loc[:event_date]
                 prices_after = prices_around_event.loc[event_date:]
-                
+
                 cum_return_before = prices_before['Price'].pct_change().add(1).cumprod().iloc[-1] - 1
                 cum_return_after = prices_after['Price'].pct_change().add(1).cumprod().iloc[-1] - 1
-            except:
+            except Exception as e:
+                logging.error(f"Error calculating cumulative returns for {event_name}: {e}")
                 cum_return_before = None
                 cum_return_after = None
         else:
             cum_return_before = None
             cum_return_after = None
-        
+
+        # Store results
         results.append({
             "Event": event_name,
             "Date": date_str,
@@ -92,76 +117,91 @@ def analyze_events(df):
             "Cumulative Return After": cum_return_after
         })
 
+    # Create DataFrame and log results
     event_impact_df = pd.DataFrame(results)
     logging.info("Event Impact Analysis: \n%s", event_impact_df)
 
-    visualize_event_impact(event_impact_df)
+    # Visualize results
+    visualize_event_impact(event_impact_df, df)
 
-def visualize_event_impact(event_impact_df):
-    # Implement your visualization code here
-    pass
+def visualize_event_impact(event_impact_df, df):
+    """
+    Visualize the impact of significant events on Brent oil prices.
 
-def visualize_event_impact(self, event_impact_df):
-        plt.figure(figsize=(14, 8))
-        for date_str, event_name in self.significant_events.items():
-            event_date = pd.to_datetime(date_str)
-            prices_around_event = self.get_prices_around_event(event_date, days_before=180, days_after=180)
-            
-            if not prices_around_event.empty:
-                plt.plot(prices_around_event.index, prices_around_event['Price'], label=f"{event_name} ({date_str})")
-                plt.axvline(event_date, color='red', linestyle='--', linewidth=0.8)
-                plt.text(event_date, prices_around_event['Price'].max(), event_name, 
-                         rotation=90, verticalalignment='bottom', fontsize=8)
+    Parameters:
+    -----------
+    event_impact_df (pd.DataFrame): The results of the event impact analysis.
+    df (pd.DataFrame): The dataset containing the 'Price' column with 'Date' as the index.
+    """
+    # Line plot for price trends around events
+    plt.figure(figsize=(14, 8))
+    for date_str, event_name in significant_events.items():
+        event_date = pd.to_datetime(date_str)
+        prices_around_event = get_prices_around_event(df, event_date)
 
-        plt.title("Brent Oil Price Trends Around Key Events")
-        plt.xlabel("Date")
-        plt.ylabel("Price")
-        plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
-        plt.tight_layout()
-        plt.show()
+        if not prices_around_event.empty:
+            plt.plot(prices_around_event.index, prices_around_event['Price'], label=f"{event_name} ({date_str})")
+            plt.axvline(event_date, color='red', linestyle='--', linewidth=0.8)
+            plt.text(event_date, prices_around_event['Price'].max(), event_name, 
+                     rotation=90, verticalalignment='bottom', fontsize=8)
 
-        changes_data = event_impact_df.melt(id_vars=["Event", "Date"], 
-                                              value_vars=["Change_1M", "Change_3M", "Change_6M"])
-        fig, axes = plt.subplots(2, 1, figsize=(12, 10))
-        
-        # Bar plot for percentage changes
-        sns.barplot(data=changes_data, x="Event", y="value", hue="variable", ax=axes[0])
-        axes[0].set_title("Percentage Change in Brent Oil Prices Before and After Events")
-        axes[0].set_ylabel("Percentage Change")
-        axes[0].set_xticklabels(axes[0].get_xticklabels(), rotation=45, ha='right')
-        axes[0].legend(title="Change Period")
+    plt.title("Brent Oil Price Trends Around Key Events")
+    plt.xlabel("Date")
+    plt.ylabel("Price (USD per barrel)")
+    plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
+    plt.tight_layout()
+    plt.show()
 
-        returns_data = event_impact_df.melt(id_vars=["Event", "Date"], 
-                                              value_vars=["Cumulative Return Before", "Cumulative Return After"])
-        sns.barplot(data=returns_data, x="Event", y="value", hue="variable", ax=axes[1])
-        axes[1].set_title("Cumulative Returns Before and After Events")
-        axes[1].set_ylabel("Cumulative Return")
-        axes[1].set_xticklabels(axes[1].get_xticklabels(), rotation=45, ha='right')
-        axes[1].legend(title="Return Period")
+    # Bar plot for percentage changes
+    changes_data = event_impact_df.melt(id_vars=["Event", "Date"], 
+                                          value_vars=["Change_1M", "Change_3M", "Change_6M"])
+    fig, axes = plt.subplots(2, 1, figsize=(12, 10))
 
-        plt.tight_layout()
-        plt.show()
+    sns.barplot(data=changes_data, x="Event", y="value", hue="variable", ax=axes[0])
+    axes[0].set_title("Percentage Change in Brent Oil Prices Before and After Events")
+    axes[0].set_ylabel("Percentage Change")
+    axes[0].set_xticklabels(axes[0].get_xticklabels(), rotation=45, ha='right')
+    axes[0].legend(title="Change Period")
 
-        self.statistical_analysis()
+    # Bar plot for cumulative returns
+    returns_data = event_impact_df.melt(id_vars=["Event", "Date"], 
+                                          value_vars=["Cumulative Return Before", "Cumulative Return After"])
+    sns.barplot(data=returns_data, x="Event", y="value", hue="variable", ax=axes[1])
+    axes[1].set_title("Cumulative Returns Before and After Events")
+    axes[1].set_ylabel("Cumulative Return")
+    axes[1].set_xticklabels(axes[1].get_xticklabels(), rotation=45, ha='right')
+    axes[1].legend(title="Return Period")
 
-def statistical_analysis(self):
-        t_test_results = {}
-        for date_str, event_name in self.significant_events.items():
-            event_date = pd.to_datetime(date_str)
-            prices_around = self.get_prices_around_event(event_date, days_before=180, days_after=180)
-            
-            if not prices_around.empty:
-                before_prices = prices_around.loc[:event_date]['Price']
-                after_prices = prices_around.loc[event_date:]['Price']
-                
-                if len(before_prices) > 1 and len(after_prices) > 1:
-                    t_stat, p_val = stats.ttest_ind(before_prices, after_prices, nan_policy='omit')
-                    t_test_results[event_name] = {"t-statistic": t_stat, "p-value": p_val}
-                else:
-                    t_test_results[event_name] = {"t-statistic": None, "p-value": None}
+    plt.tight_layout()
+    plt.show()
 
-        t_test_df = pd.DataFrame(t_test_results).T
-        print("\nT-Test Results:")
-        print(t_test_df)
+    # Perform statistical analysis
+    statistical_analysis(df)
 
+def statistical_analysis(df):
+    """
+    Perform statistical analysis (t-test) to compare prices before and after events.
 
+    Parameters:
+    -----------
+    df (pd.DataFrame): The dataset containing the 'Price' column with 'Date' as the index.
+    """
+    t_test_results = {}
+    for date_str, event_name in significant_events.items():
+        event_date = pd.to_datetime(date_str)
+        prices_around = get_prices_around_event(df, event_date)
+
+        if not prices_around.empty:
+            before_prices = prices_around.loc[:event_date]['Price']
+            after_prices = prices_around.loc[event_date:]['Price']
+
+            if len(before_prices) > 1 and len(after_prices) > 1:
+                t_stat, p_val = stats.ttest_ind(before_prices, after_prices, nan_policy='omit')
+                t_test_results[event_name] = {"t-statistic": t_stat, "p-value": p_val}
+            else:
+                t_test_results[event_name] = {"t-statistic": None, "p-value": None}
+
+    t_test_df = pd.DataFrame(t_test_results).T
+    logging.info("T-Test Results: \n%s", t_test_df)
+    print("\nT-Test Results:")
+    print(t_test_df)
