@@ -231,9 +231,13 @@ def fit_markov_switching_model(diff_data):
     Returns:
     results (Result): The fitted model results.
     """
-    logging.info('Fitting the Markov-Switching AR model.')
-    model = MarkovAutoregression(diff_data, k_regimes=2, order=1, switching_ar=True)
-    results = model.fit()
-    logging.info('Model fitted successfully.')
-    return 
+    try:
+        logging.info('Fitting the Markov-Switching AR model.')
+        model = MarkovAutoregression(diff_data, k_regimes=2, order=1, switching_ar=True)
+        results = model.fit()
+        logging.info('Model fitted successfully.')
+        return results
+    except Exception as e:
+        logging.error(f'Error fitting the model: {e}')
+        return Non
 
