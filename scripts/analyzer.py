@@ -2,20 +2,25 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import logging
 import os
+import numpy as np
 import seaborn as sns
 from datetime import timedelta
 from scipy import stats
 from statsmodels.tsa.regime_switching.markov_autoregression import MarkovAutoregression
-
+from sklearn.preprocessing import MinMaxScaler
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import LSTM, Dense
+from sklearn.metrics import mean_squared_error, mean_absolute_error
 # Set up logging
 log_file_path = 'logs/analysis.log'
 os.makedirs(os.path.dirname(log_file_path), exist_ok=True)
 
-logging.basicConfig(
-    filename=log_file_path,
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
+
+
+# Configure logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
 
 # Define significant events
 significant_events = {
@@ -207,7 +212,8 @@ def statistical_analysis(df):
     print("\nT-Test Results:")
     print(t_test_df)
 
-def preprocess_data(data):
+
+def process_data(data):
     """
     Difference the series to make it stationary.
     
@@ -239,5 +245,93 @@ def fit_markov_switching_model(diff_data):
         return results
     except Exception as e:
         logging.error(f'Error fitting the model: {e}')
-        return Non
+        return None
+def preprocess_data(data):
+    """
+    Preprocess the data for LSTM:
+    1. Scale the 'Price' column to a range of [0, 1].
+    2. Split the data into training and testing sets.
+    3. Create sequences for LSTM input.
+    """
+    logger.info("Preprocessing data for LSTM...")
+    
+    # Scale the 'Price' column
+    scaler = MinMaxScaler(feature_range=(0, 1))
+    scaled_data = scaler.fit_transform(data[['Price']].values)
+    
+    # Split the data into training and testing sets
+    train_size = int(len(scaled_data) * 0.8)
+    train_data = scaled_data[:train_size]
+    test_data = scaled_data[train_size:]
+    
+    # Create sequences for LSTM input
+    def create_dataset(data, time_step=60):
+        X, y = [], []
+        for i in range(len(data) - time_step - 1):
+            X.append(data[i:(i + time_step), 0])
+            y.append(data[i + time_step, 0])
+        return np.array(X), np.array(y)
+    
+    time_step = 60
+    X_train, y_train = create_dataset(train_data, time_step)
+    X_test, y_test = create_dataset(test_data, time_step)
+    
+    # Reshape input to be [samples, time steps, features]
+    X_train = X_train.reshape(X_train.shape[0], X_train.shape[1], 1)
+    X_test = X_test.reshape(X_test.shape[0], X_test.shape[1], 1)
+    
+    return X_train, y_train, X_test, y_test, scaler, train_size, time_step
+
+def build_lstm_model(input_shape):
+    """
+    Build and compile the LSTM model.
+    """
+    logger.info("Building LSTM model...")
+    
+    model = Sequential()
+    model.add(LSTM(100, return_sequences=True, input_shape=input_shape))
+    model.add(LSTM(100, return_sequences=False))
+    model.add(Dense(25))
+    model.add(Dense(1))
+    
+    # Compile the model
+    model.compile(optimizer='adam', loss='mean_squared_error')
+    
+    return model
+
+def train_model(model, X_train, y_train, epochs=10, batch_size=32):
+    """
+    Train the LSTM model.
+    """
+    logger.info("Training LSTM model...")
+    history = model.fit(X_train, y_train, batch_size=batch_size, epochs=epochs, verbose=1)
+    return history
+
+def evaluate_model(model, X_test, y_test, scaler):
+    """
+    Evaluate the LSTM model on the test data and calculate metrics.
+    """
+    logger.info("Evaluating LSTM model...")
+    
+    # Make predictions
+    predictions = model.predict(X_test)
+    predictions = scaler.inverse_transform(predictions)  # Scale back to original range
+    
+    # Scale y_test back to original range
+    y_test_original = scaler.inverse_transform(y_test.reshape(-1, 1))
+    
+    # Calculate evaluation metrics
+    mse = mean_squared_error(y_test_original, predictions)
+    rmse = np.sqrt(mse)
+    mae = mean_absolute_error(y_test_original, predictions)
+    
+    logger.info(f"Mean Squared Error (MSE): {mse}")
+    logger.info(f"Root Mean Squared Error (RMSE): {rmse}")
+    logger.info(f"Mean Absolute Error (MAE): {mae}")
+    
+    print(f"Mean Squared Error (MSE): {mse}")
+    print(f"Root Mean Squared Error (RMSE): {rmse}")
+    print(f"Mean Absolute Error (MAE): {mae}")
+    
+    return predictions, mse, rmse, mae
 
