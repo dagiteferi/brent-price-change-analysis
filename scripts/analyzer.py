@@ -5,6 +5,7 @@ import os
 import seaborn as sns
 from datetime import timedelta
 from scipy import stats
+from statsmodels.tsa.regime_switching.markov_autoregression import MarkovAutoregression
 
 # Set up logging
 log_file_path = 'logs/analysis.log'
