@@ -237,25 +237,3 @@ def fit_markov_switching_model(diff_data):
     logging.info('Model fitted successfully.')
     return 
 
-def plot_smoothed_probabilities(results, diff_data):
-    """
-    Plot the smoothed probabilities of each regime over time.
-    
-    Parameters:
-    results (Result): The fitted model results.
-    diff_data (Series): The differenced data.
-    """
-    logging.info('Aligning index with probabilities.')
-    n_probs = len(results.smoothed_marginal_probabilities[0])
-    aligned_index = diff_data.index[-n_probs:]
-    
-    logging.info('Plotting smoothed probabilities.')
-    plt.figure(figsize=(12, 6))
-    plt.plot(aligned_index, results.smoothed_marginal_probabilities[0], label='Regime 0 (Stable)')
-    plt.plot(aligned_index, results.smoothed_marginal_probabilities[1], label='Regime 1 (Volatile)')
-    plt.title('Probability of Each Regime Over Time')
-    plt.xlabel('Date')
-    plt.ylabel('Probability')
-    plt.legend()
-    plt.show()
-    logging.info('Plot displayed successfully.')
