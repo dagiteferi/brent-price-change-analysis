@@ -3,3 +3,4 @@ numpy
 matplotlib
 statsmodels
 seaborn
+statsmodels
