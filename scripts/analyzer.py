@@ -205,3 +205,33 @@ def statistical_analysis(df):
     logging.info("T-Test Results: \n%s", t_test_df)
     print("\nT-Test Results:")
     print(t_test_df)
+    
+def preprocess_data(data):
+    """
+    Difference the series to make it stationary.
+    
+    Parameters:
+    data (DataFrame): The input data containing the 'Price' column.
+    
+    Returns:
+    Series: Differenced data.
+    """
+    logging.info('Differencing the data to make it stationary.')
+    diff_data = data['Price'].diff().dropna()
+    logging.info('Data differenced successfully.')
+    return diff_data
+def fit_markov_switching_model(diff_data):
+    """
+    Fit a Markov-Switching AR model (2 regimes, AR(1)).
+    
+    Parameters:
+    diff_data (Series): The differenced data.
+    
+    Returns:
+    results (Result): The fitted model results.
+    """
+    logging.info('Fitting the Markov-Switching AR model.')
+    model = MarkovAutoregression(diff_data, k_regimes=2, order=1, switching_ar=True)
+    results = model.fit()
+    logging.info('Model fitted successfully.')
+    return 
