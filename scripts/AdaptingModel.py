@@ -9,7 +9,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense
 from tensorflow.keras.optimizers import Adam
 
-class OilPricePredictor:
+class PricePredictor:
     def __init__(self):
         """Initialize the OilPricePredictor class."""
         self.merged_data = None  # Merged dataset
@@ -34,7 +34,7 @@ class OilPricePredictor:
         self.logger = logging.getLogger(__name__)
         self.logger.info("Logging initialized.")
 
-    def load_data(self, data_path="../data"):
+    def load_data(self, data_path="data"):
         """Load and prepare the data from CSV files."""
         try:
             self.logger.info("Loading data from CSV files...")
