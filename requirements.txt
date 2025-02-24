@@ -5,3 +5,4 @@ statsmodels
 seaborn
 statsmodels
 wbdata
+sklearn
