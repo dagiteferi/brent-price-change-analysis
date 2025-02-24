@@ -138,6 +138,34 @@ class PricePredictor:
         except Exception as e:
             self.logger.error(f"Error in LSTM model building: {str(e)}")
             return None, None, None
+    def train_lstm(self):
+        """Train the LSTM model and log the performance."""
+        if self.X is None or self.y is None:
+            logging.error("Data not loaded. Please load data first using load_data().")
+            return None
+
+        logging.info("Starting LSTM model training...")
+        
+        # Split data into training and testing
+        train_size = int(len(self.X) * 0.8)
+        X_train, X_test = self.X.iloc[:train_size], self.X.iloc[train_size:]
+        y_train, y_test = self.y.iloc[:train_size], self.y.iloc[train_size:]
+
+        # Train the LSTM model
+        lstm_model, X_scaler, y_scaler = self.build_lstm_model(X_train, y_train)
+
+        if lstm_model:
+            # Evaluate the model
+            X_test_scaled = X_scaler.transform(X_test)
+            X_test_lstm = X_test_scaled.reshape((X_test_scaled.shape[0], 1, X_test_scaled.shape[1]))
+            y_pred = lstm_model.predict(X_test_lstm)
+            y_pred = y_scaler.inverse_transform(y_pred)
+
+            mse = mean_squared_error(y_test, y_pred.flatten())
+            logging.info(f"LSTM Model MSE: {mse:.4f}")
+            print(f"LSTM Model MSE: {mse:.4f}")
+        else:
+            logging.error("LSTM model training failed.")
 
     def train_and_evaluate(self, n_splits=5):
         """Train and evaluate the LSTM model using time series cross-validation."""
