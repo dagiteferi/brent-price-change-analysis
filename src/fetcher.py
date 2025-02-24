@@ -56,11 +56,12 @@ class WorldBankDataFetcher:
             data = wbdata.get_dataframe(
                 {indicator_code: indicator_name},
                 country=country,
-                date=(self.start_date, self.end_date)
-            )
+                date=(self.start_date, self.end_date))
             
             if data is not None and not data.empty:
                 self.logger.info(f"Successfully fetched {indicator_name} data.")
+                # Explicitly rename the column to the indicator name
+                data = data.rename(columns={indicator_name: indicator_name})
             else:
                 self.logger.warning(f"No data found for {indicator_name} ({indicator_code}).")
             
