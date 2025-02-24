@@ -89,8 +89,8 @@ class WorldBankDataFetcher:
             
             # Reset index and rename columns for clarity
             df = df.reset_index()
-            df.columns = ['date', indicator_name]
-            df['date'] = pd.to_datetime(df['date'])
+            df.columns = ['date', indicator_name]  # Ensure the column name matches the indicator name
+            df['date'] = pd.to_datetime(df['date'], errors='coerce')  # Convert to datetime
             
             # Handle missing and infinite values
             df[indicator_name] = df[indicator_name].replace([np.inf, -np.inf], np.nan)
@@ -99,7 +99,7 @@ class WorldBankDataFetcher:
             # Resample data to daily frequency and interpolate missing values
             full_index = pd.date_range(start=df['date'].min(), end=df['date'].max(), freq='D')
             df_daily = df.set_index('date').reindex(full_index)
-            df_daily.interpolate(method='cubic', inplace=True)
+            df_daily.interpolate(method='time', inplace=True)  # Change cubic to time interpolation
             df_daily.reset_index(inplace=True)
             df_daily.rename(columns={'index': 'Date'}, inplace=True)
             
