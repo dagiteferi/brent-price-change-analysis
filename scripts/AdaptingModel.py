@@ -52,7 +52,7 @@ class PricePredictor:
             exchange_rate_data_daily['Date'] = pd.to_datetime(exchange_rate_data_daily['Date'])
             exchange_rate_data_daily.set_index('Date', inplace=True)
             
-            oil_data_daily = pd.read_csv(f"{data_path}/Copy of BrentOilPrices.csv")
+            oil_data_daily = pd.read_csv(f"{data_path}/BrentOilPrices.csv")
             oil_data_daily['Date'] = pd.to_datetime(oil_data_daily['Date'])
             oil_data_daily.set_index('Date', inplace=True)
             
@@ -179,6 +179,6 @@ class PricePredictor:
 
 # Example usage
 if __name__ == "__main__":
-    predictor = OilPricePredictor()
+    predictor = PricePredictor()
     if predictor.load_data():
         predictor.train_and_evaluate(n_splits=5)
