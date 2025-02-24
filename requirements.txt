@@ -4,3 +4,4 @@ matplotlib
 statsmodels
 seaborn
 statsmodels
+wbdata
