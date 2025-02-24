@@ -6,3 +6,4 @@ seaborn
 statsmodels
 wbdata
 sklearn
+tensorflow
