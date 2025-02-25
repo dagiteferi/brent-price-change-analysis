@@ -1,4 +1,22 @@
+
+2025-02-25 19:25:30,580 - INFO - Logging initialized.
+2025-02-25 19:25:30,580 - INFO - Loading data from CSV files...
+2025-02-25 19:25:30,583 - ERROR - Error loading data: [Errno 2] No such file or directory: '../data/GDP_cleaned_data_daily.csv'
+2025-02-25 19:25:30,584 - ERROR - Please ensure all required CSV files are in the correct directory.
+2025-02-25 19:25:55,288 - INFO - Logging initialized.
+2025-02-25 19:25:55,288 - INFO - Loading data from CSV files...
+2025-02-25 19:25:55,290 - ERROR - Error loading data: [Errno 2] No such file or directory: '../data/GDP_cleaned_data_daily.csv'
+2025-02-25 19:25:55,291 - ERROR - Please ensure all required CSV files are in the correct directory.
+2025-02-25 19:27:42,277 - INFO - Logging initialized.
+2025-02-25 19:27:42,286 - INFO - Loading data from CSV files...
+2025-02-25 19:27:42,936 - INFO - Data loaded successfully!
+2025-02-25 19:27:42,937 - INFO - Merging datasets...
+2025-02-25 19:27:42,939 - INFO - Creating features...
+2025-02-25 19:27:42,955 - INFO - Data preprocessing completed.
+
 2025-02-25 19:59:33,112 - INFO - Logging initialized.
 2025-02-25 19:59:33,112 - INFO - Loading data from CSV files...
 2025-02-25 19:59:33,116 - ERROR - Error loading data: [Errno 2] No such file or directory: '../data/GDP_cleaned_data_daily.csv'
 2025-02-25 19:59:33,116 - ERROR - Please ensure all required CSV files are in the correct directory.
+
+

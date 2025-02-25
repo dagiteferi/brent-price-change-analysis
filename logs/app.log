@@ -204,6 +204,586 @@
 2025-02-25 19:32:13,678 - INFO - Calculating model performance metrics.
 2025-02-25 19:32:13,679 - ERROR - Evaluation results not found. Please train and evaluate the model first.
 2025-02-25 19:32:13,680 - INFO - 127.0.0.1 - - [25/Feb/2025 19:32:13] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:33:59,463 - INFO - Logging initialized.
+2025-02-25 21:33:59,463 - INFO - Loading LSTM model and scalers...
+2025-02-25 21:33:59,647 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 21:33:59,685 - INFO - Model and scalers loaded successfully.
+2025-02-25 21:33:59,685 - INFO - Loading datasets...
+2025-02-25 21:34:00,260 - INFO - Datasets loaded successfully.
+2025-02-25 21:34:00,260 - INFO - Starting Flask app.
+2025-02-25 21:34:00,335 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-25 21:34:00,335 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-25 21:34:00,340 - INFO -  * Restarting with stat
+2025-02-25 21:34:06,054 - INFO - Logging initialized.
+2025-02-25 21:34:06,054 - INFO - Loading LSTM model and scalers...
+2025-02-25 21:34:06,166 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 21:34:06,174 - INFO - Model and scalers loaded successfully.
+2025-02-25 21:34:06,174 - INFO - Loading datasets...
+2025-02-25 21:34:06,796 - INFO - Datasets loaded successfully.
+2025-02-25 21:34:06,798 - INFO - Starting Flask app.
+2025-02-25 21:34:06,807 - WARNING -  * Debugger is active!
+2025-02-25 21:34:06,812 - INFO -  * Debugger PIN: 105-113-212
+2025-02-25 21:34:35,133 - INFO - Calculating model performance metrics.
+2025-02-25 21:34:35,133 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:34:35,134 - INFO - 127.0.0.1 - - [25/Feb/2025 21:34:35] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:34:36,451 - INFO - Calculating model performance metrics.
+2025-02-25 21:34:36,452 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:34:36,452 - INFO - 127.0.0.1 - - [25/Feb/2025 21:34:36] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:34:36,661 - INFO - Calculating model performance metrics.
+2025-02-25 21:34:36,661 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:34:36,662 - INFO - 127.0.0.1 - - [25/Feb/2025 21:34:36] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:34:36,893 - INFO - Calculating model performance metrics.
+2025-02-25 21:34:36,893 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:34:36,893 - INFO - 127.0.0.1 - - [25/Feb/2025 21:34:36] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:34:37,290 - INFO - Calculating model performance metrics.
+2025-02-25 21:34:37,290 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:34:37,291 - INFO - 127.0.0.1 - - [25/Feb/2025 21:34:37] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:34:37,486 - INFO - Calculating model performance metrics.
+2025-02-25 21:34:37,487 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:34:37,488 - INFO - 127.0.0.1 - - [25/Feb/2025 21:34:37] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:34:37,669 - INFO - Calculating model performance metrics.
+2025-02-25 21:34:37,670 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:34:37,670 - INFO - 127.0.0.1 - - [25/Feb/2025 21:34:37] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:34:37,842 - INFO - Calculating model performance metrics.
+2025-02-25 21:34:37,843 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:34:37,844 - INFO - 127.0.0.1 - - [25/Feb/2025 21:34:37] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:30,937 - INFO - Logging initialized.
+2025-02-25 21:41:30,937 - INFO - Loading LSTM model and scalers...
+2025-02-25 21:41:31,072 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 21:41:31,072 - INFO - Model and scalers loaded successfully.
+2025-02-25 21:41:31,072 - INFO - Loading datasets...
+2025-02-25 21:41:31,626 - INFO - Datasets loaded successfully.
+2025-02-25 21:41:31,629 - INFO - Starting Flask app.
+2025-02-25 21:41:31,639 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-25 21:41:31,639 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-25 21:41:31,655 - INFO -  * Restarting with stat
+2025-02-25 21:41:37,384 - INFO - Logging initialized.
+2025-02-25 21:41:37,385 - INFO - Loading LSTM model and scalers...
+2025-02-25 21:41:37,487 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 21:41:37,491 - INFO - Model and scalers loaded successfully.
+2025-02-25 21:41:37,491 - INFO - Loading datasets...
+2025-02-25 21:41:37,969 - INFO - Datasets loaded successfully.
+2025-02-25 21:41:37,971 - INFO - Starting Flask app.
+2025-02-25 21:41:37,977 - WARNING -  * Debugger is active!
+2025-02-25 21:41:37,982 - INFO -  * Debugger PIN: 105-113-212
+2025-02-25 21:41:52,222 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:52,223 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:52,225 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:52] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:53,434 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:53,435 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:53,436 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:53] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:53,625 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:53,627 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:53,627 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:53] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:53,842 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:53,842 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:53,842 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:53] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:54,031 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:54,031 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:54,032 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:54] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:54,242 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:54,242 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:54,242 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:54] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:54,437 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:54,437 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:54,438 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:54] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:55,934 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:55,934 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:55,935 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:55] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:55,968 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:41:57,393 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:57,394 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:57,395 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:57] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:57,430 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:41:57,675 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:57,675 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:57,677 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:57] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:57,710 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:41:57,914 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:57,915 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:57,915 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:57] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:57,948 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:41:58,147 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:58,147 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:58,147 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:58] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:58,190 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:41:58,343 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:58,343 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:58,343 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:58] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:58,379 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:41:58,538 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:58,539 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:58,540 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:58] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:58,570 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:41:58,753 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:58,753 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:58,755 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:58] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:58,793 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:41:58,944 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:58,944 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:58,944 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:58] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:58,992 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:43:21,382 - INFO - Logging initialized.
+2025-02-25 21:43:21,383 - INFO - Loading LSTM model and scalers...
+2025-02-25 21:43:21,503 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 21:43:21,523 - INFO - Model and scalers loaded successfully.
+2025-02-25 21:43:21,523 - INFO - Loading datasets...
+2025-02-25 21:43:22,067 - INFO - Datasets loaded successfully.
+2025-02-25 21:43:22,067 - INFO - Starting Flask app.
+2025-02-25 21:43:22,091 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-25 21:43:22,091 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-25 21:43:22,091 - INFO -  * Restarting with stat
+2025-02-25 21:43:28,651 - INFO - Logging initialized.
+2025-02-25 21:43:28,651 - INFO - Loading LSTM model and scalers...
+2025-02-25 21:43:28,767 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 21:43:28,767 - INFO - Model and scalers loaded successfully.
+2025-02-25 21:43:28,767 - INFO - Loading datasets...
+2025-02-25 21:43:29,268 - INFO - Datasets loaded successfully.
+2025-02-25 21:43:29,268 - INFO - Starting Flask app.
+2025-02-25 21:43:29,284 - WARNING -  * Debugger is active!
+2025-02-25 21:43:29,289 - INFO -  * Debugger PIN: 105-113-212
+2025-02-25 21:43:33,520 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:33,521 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:33,522 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:33] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:34,465 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:34,466 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:34,467 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:34] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:34,718 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:34,718 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:34,718 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:34] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:34,943 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:34,943 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:34,944 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:34] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:35,134 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:35,134 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:35,134 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:35] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:35,334 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:35,334 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:35,334 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:35] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:35,517 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:35,517 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:35,517 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:35] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:35,725 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:35,725 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:35,726 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:35] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:36,907 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:36,907 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:36,907 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:36] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:36,957 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:43:37,212 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:37,212 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:37,212 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:37] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:37,251 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:43:37,394 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:37,394 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:37,394 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:37] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:37,446 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:43:37,663 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:37,663 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:37,663 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:37] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:37,705 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:43:37,894 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:37,895 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:37,895 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:37] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:37,943 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:44:08,597 - INFO -  * Detected change in 'c:\\Users\\HP\\Documents\\Dagii\\week 10\\brent-price-change-analysis\\oil-price-dashboard\\backend\\app.py', reloading
+2025-02-25 21:44:09,431 - INFO -  * Restarting with stat
+2025-02-25 21:44:18,865 - INFO - Logging initialized.
+2025-02-25 21:44:18,865 - INFO - Loading LSTM model and scalers...
+2025-02-25 21:44:18,991 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 21:44:18,991 - INFO - Model and scalers loaded successfully.
+2025-02-25 21:44:18,991 - INFO - Loading datasets...
+2025-02-25 21:44:19,585 - INFO - Datasets loaded successfully.
+2025-02-25 21:44:19,585 - INFO - Starting Flask app.
+2025-02-25 21:44:19,618 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-25 21:44:19,619 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-25 21:44:19,620 - INFO -  * Restarting with stat
+2025-02-25 21:44:26,583 - INFO - Logging initialized.
+2025-02-25 21:44:26,583 - INFO - Loading LSTM model and scalers...
+2025-02-25 21:44:26,717 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 21:44:26,717 - INFO - Model and scalers loaded successfully.
+2025-02-25 21:44:26,717 - INFO - Loading datasets...
+2025-02-25 21:44:27,267 - INFO - Datasets loaded successfully.
+2025-02-25 21:44:27,267 - INFO - Starting Flask app.
+2025-02-25 21:44:27,284 - WARNING -  * Debugger is active!
+2025-02-25 21:44:27,290 - INFO -  * Debugger PIN: 105-113-212
+2025-02-25 21:44:31,412 - INFO - Calculating model performance metrics.
+2025-02-25 21:44:31,413 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:44:31,414 - INFO - 127.0.0.1 - - [25/Feb/2025 21:44:31] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:48:40,347 - INFO -  * Detected change in 'c:\\Users\\HP\\Documents\\Dagii\\week 10\\brent-price-change-analysis\\oil-price-dashboard\\backend\\app.py', reloading
+2025-02-25 21:48:41,152 - INFO -  * Restarting with stat
+2025-02-25 21:48:47,709 - INFO - Logging initialized.
+2025-02-25 21:48:47,710 - INFO - Loading LSTM model and scalers...
+2025-02-25 21:48:47,841 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 21:48:47,855 - INFO - Model and scalers loaded successfully.
+2025-02-25 21:48:47,855 - INFO - Loading datasets...
+2025-02-25 21:48:48,501 - INFO - Datasets loaded successfully.
+2025-02-25 21:48:48,511 - WARNING -  * Debugger is active!
+2025-02-25 21:48:48,522 - INFO -  * Debugger PIN: 105-113-212
+2025-02-25 21:49:16,267 - INFO - Calculating model performance metrics.
+2025-02-25 21:49:16,267 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:49:16,269 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:16] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:49:17,047 - INFO - Calculating model performance metrics.
+2025-02-25 21:49:17,047 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:49:17,047 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:17] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:49:17,285 - INFO - Calculating model performance metrics.
+2025-02-25 21:49:17,285 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:49:17,286 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:17] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:49:17,484 - INFO - Calculating model performance metrics.
+2025-02-25 21:49:17,484 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:49:17,484 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:17] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:49:17,700 - INFO - Calculating model performance metrics.
+2025-02-25 21:49:17,700 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:49:17,700 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:17] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:49:17,901 - INFO - Calculating model performance metrics.
+2025-02-25 21:49:17,901 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:49:17,901 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:17] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:49:18,102 - INFO - Calculating model performance metrics.
+2025-02-25 21:49:18,102 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:49:18,102 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:18] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:49:18,317 - INFO - Calculating model performance metrics.
+2025-02-25 21:49:18,317 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:49:18,317 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:18] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:49:19,978 - INFO - Calculating model performance metrics.
+2025-02-25 21:49:19,978 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:49:19,980 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:19] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:49:20,011 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:49:20,377 - INFO - Calculating model performance metrics.
+2025-02-25 21:49:20,377 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:49:20,377 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:20] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:49:20,428 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:49:25,349 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:25] "GET / HTTP/1.1" 200 -
+2025-02-25 21:49:31,087 - INFO - Calculating model performance metrics.
+2025-02-25 21:49:31,088 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:49:31,088 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:31] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 22:03:49,550 - INFO - Received request for historical data.
+2025-02-25 22:03:49,551 - INFO - Returning filtered data.
+2025-02-25 22:03:49,552 - INFO - Received request for event analysis.
+2025-02-25 22:03:49,561 - INFO - Calculating model performance metrics.
+2025-02-25 22:03:49,563 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 22:03:49,565 - INFO - 127.0.0.1 - - [25/Feb/2025 22:03:49] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 22:03:49,631 - INFO - Calculating model performance metrics.
+2025-02-25 22:03:49,667 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 22:03:49,699 - INFO - 127.0.0.1 - - [25/Feb/2025 22:03:49] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 22:03:49,829 - INFO - 127.0.0.1 - - [25/Feb/2025 22:03:49] "GET /api/data HTTP/1.1" 200 -
+2025-02-25 22:03:49,829 - INFO - Received request for historical data.
+2025-02-25 22:03:49,829 - INFO - Returning filtered data.
+2025-02-25 22:03:50,095 - INFO - 127.0.0.1 - - [25/Feb/2025 22:03:50] "GET /api/data HTTP/1.1" 200 -
+2025-02-25 22:03:50,119 - INFO - Returning event analysis results.
+2025-02-25 22:03:50,119 - INFO - 127.0.0.1 - - [25/Feb/2025 22:03:50] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 22:03:50,126 - INFO - Received request for event analysis.
+2025-02-25 22:03:50,148 - INFO - Returning event analysis results.
+2025-02-25 22:03:50,148 - INFO - 127.0.0.1 - - [25/Feb/2025 22:03:50] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 22:04:02,726 - INFO - 127.0.0.1 - - [25/Feb/2025 22:04:02] "OPTIONS /api/predict HTTP/1.1" 200 -
+2025-02-25 22:04:02,734 - INFO - Received prediction request.
+2025-02-25 22:04:02,735 - INFO - Preprocessing input data.
+2025-02-25 22:04:02,762 - INFO - Making predictions.
+2025-02-25 22:04:03,117 - INFO - Prediction successful: 118.2299575805664
+2025-02-25 22:04:03,118 - ERROR - Error in /api/predict: Object of type float32 is not JSON serializable
+2025-02-25 22:04:03,119 - INFO - 127.0.0.1 - - [25/Feb/2025 22:04:03] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2025-02-25 22:04:04,168 - INFO - Received prediction request.
+2025-02-25 22:04:04,168 - INFO - Preprocessing input data.
+2025-02-25 22:04:04,168 - INFO - Making predictions.
+2025-02-25 22:04:04,286 - INFO - Prediction successful: 118.2299575805664
+2025-02-25 22:04:04,286 - ERROR - Error in /api/predict: Object of type float32 is not JSON serializable
+2025-02-25 22:04:04,286 - INFO - 127.0.0.1 - - [25/Feb/2025 22:04:04] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2025-02-25 22:05:37,963 - INFO - 127.0.0.1 - - [25/Feb/2025 22:05:37] "OPTIONS /api/predict HTTP/1.1" 200 -
+2025-02-25 22:05:37,968 - INFO - Received prediction request.
+2025-02-25 22:05:37,968 - INFO - Preprocessing input data.
+2025-02-25 22:05:37,970 - INFO - Making predictions.
+2025-02-25 22:05:38,076 - INFO - Prediction successful: 118.2299575805664
+2025-02-25 22:05:38,076 - ERROR - Error in /api/predict: Object of type float32 is not JSON serializable
+2025-02-25 22:05:38,076 - INFO - 127.0.0.1 - - [25/Feb/2025 22:05:38] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2025-02-25 22:05:38,457 - INFO - Received prediction request.
+2025-02-25 22:05:38,458 - INFO - Preprocessing input data.
+2025-02-25 22:05:38,459 - INFO - Making predictions.
+2025-02-25 22:05:38,577 - INFO - Prediction successful: 118.2299575805664
+2025-02-25 22:05:38,577 - ERROR - Error in /api/predict: Object of type float32 is not JSON serializable
+2025-02-25 22:05:38,577 - INFO - 127.0.0.1 - - [25/Feb/2025 22:05:38] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2025-02-25 22:05:38,707 - INFO - Received prediction request.
+2025-02-25 22:05:38,707 - INFO - Preprocessing input data.
+2025-02-25 22:05:38,709 - INFO - Making predictions.
+2025-02-25 22:05:38,862 - INFO - Prediction successful: 118.2299575805664
+2025-02-25 22:05:38,862 - ERROR - Error in /api/predict: Object of type float32 is not JSON serializable
+2025-02-25 22:05:38,862 - INFO - 127.0.0.1 - - [25/Feb/2025 22:05:38] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2025-02-25 22:05:38,899 - INFO - Received prediction request.
+2025-02-25 22:05:38,899 - INFO - Preprocessing input data.
+2025-02-25 22:05:38,899 - INFO - Making predictions.
+2025-02-25 22:05:39,047 - INFO - Prediction successful: 118.2299575805664
+2025-02-25 22:05:39,047 - ERROR - Error in /api/predict: Object of type float32 is not JSON serializable
+2025-02-25 22:05:39,047 - INFO - 127.0.0.1 - - [25/Feb/2025 22:05:39] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2025-02-25 22:05:39,094 - INFO - Received prediction request.
+2025-02-25 22:05:39,094 - INFO - Preprocessing input data.
+2025-02-25 22:05:39,094 - INFO - Making predictions.
+2025-02-25 22:05:39,234 - INFO - Prediction successful: 118.2299575805664
+2025-02-25 22:05:39,234 - ERROR - Error in /api/predict: Object of type float32 is not JSON serializable
+2025-02-25 22:05:39,235 - INFO - 127.0.0.1 - - [25/Feb/2025 22:05:39] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2025-02-25 22:06:24,838 - INFO - Received request for historical data.
+2025-02-25 22:06:24,839 - INFO - Returning filtered data.
+2025-02-25 22:06:24,889 - INFO - Calculating model performance metrics.
+2025-02-25 22:06:24,890 - INFO - Received request for event analysis.
+2025-02-25 22:06:24,917 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 22:06:24,989 - INFO - 127.0.0.1 - - [25/Feb/2025 22:06:24] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 22:06:25,069 - INFO - Calculating model performance metrics.
+2025-02-25 22:06:25,070 - INFO - 127.0.0.1 - - [25/Feb/2025 22:06:25] "GET /api/data HTTP/1.1" 200 -
+2025-02-25 22:06:25,070 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 22:06:25,070 - INFO - 127.0.0.1 - - [25/Feb/2025 22:06:25] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 22:06:25,084 - INFO - Received request for historical data.
+2025-02-25 22:06:25,088 - INFO - Returning filtered data.
+2025-02-25 22:06:25,338 - INFO - 127.0.0.1 - - [25/Feb/2025 22:06:25] "GET /api/data HTTP/1.1" 200 -
+2025-02-25 22:06:25,371 - INFO - Returning event analysis results.
+2025-02-25 22:06:25,371 - INFO - 127.0.0.1 - - [25/Feb/2025 22:06:25] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 22:06:25,371 - INFO - Received request for event analysis.
+2025-02-25 22:06:25,407 - INFO - Returning event analysis results.
+2025-02-25 22:06:25,408 - INFO - 127.0.0.1 - - [25/Feb/2025 22:06:25] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 22:07:18,253 - INFO - Received request for historical data.
+2025-02-25 22:07:18,254 - INFO - Returning filtered data.
+2025-02-25 22:07:18,255 - INFO - Received request for event analysis.
+2025-02-25 22:07:18,272 - INFO - Calculating model performance metrics.
+2025-02-25 22:07:18,463 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 22:07:18,497 - INFO - 127.0.0.1 - - [25/Feb/2025 22:07:18] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 22:07:18,557 - INFO - Calculating model performance metrics.
+2025-02-25 22:07:18,583 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 22:07:18,647 - INFO - 127.0.0.1 - - [25/Feb/2025 22:07:18] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 22:07:18,702 - INFO - 127.0.0.1 - - [25/Feb/2025 22:07:18] "GET /api/data HTTP/1.1" 200 -
+2025-02-25 22:07:18,720 - INFO - Received request for historical data.
+2025-02-25 22:07:18,720 - INFO - Returning filtered data.
+2025-02-25 22:07:18,920 - INFO - 127.0.0.1 - - [25/Feb/2025 22:07:18] "GET /api/data HTTP/1.1" 200 -
+2025-02-25 22:07:18,933 - INFO - Returning event analysis results.
+2025-02-25 22:07:18,933 - INFO - 127.0.0.1 - - [25/Feb/2025 22:07:18] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 22:07:18,944 - INFO - Received request for event analysis.
+2025-02-25 22:07:18,972 - INFO - Returning event analysis results.
+2025-02-25 22:07:18,973 - INFO - 127.0.0.1 - - [25/Feb/2025 22:07:18] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 22:07:50,867 - INFO - Received request for historical data.
+2025-02-25 22:07:50,868 - INFO - Returning filtered data.
+2025-02-25 22:07:50,869 - INFO - Received request for event analysis.
+2025-02-25 22:07:50,876 - INFO - Calculating model performance metrics.
+2025-02-25 22:07:50,916 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 22:07:50,918 - INFO - 127.0.0.1 - - [25/Feb/2025 22:07:50] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 22:07:50,993 - INFO - Calculating model performance metrics.
+2025-02-25 22:07:51,073 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 22:07:51,089 - INFO - 127.0.0.1 - - [25/Feb/2025 22:07:51] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 22:07:51,158 - INFO - 127.0.0.1 - - [25/Feb/2025 22:07:51] "GET /api/data HTTP/1.1" 200 -
+2025-02-25 22:07:51,158 - INFO - Received request for historical data.
+2025-02-25 22:07:51,158 - INFO - Returning filtered data.
+2025-02-25 22:07:51,450 - INFO - 127.0.0.1 - - [25/Feb/2025 22:07:51] "GET /api/data HTTP/1.1" 200 -
+2025-02-25 22:07:51,465 - INFO - Returning event analysis results.
+2025-02-25 22:07:51,465 - INFO - 127.0.0.1 - - [25/Feb/2025 22:07:51] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 22:07:51,486 - INFO - Received request for event analysis.
+2025-02-25 22:07:51,528 - INFO - Returning event analysis results.
+2025-02-25 22:07:51,528 - INFO - 127.0.0.1 - - [25/Feb/2025 22:07:51] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 22:07:58,111 - INFO - 127.0.0.1 - - [25/Feb/2025 22:07:58] "OPTIONS /api/predict HTTP/1.1" 200 -
+2025-02-25 22:07:58,111 - INFO - Received prediction request.
+2025-02-25 22:07:58,111 - INFO - Preprocessing input data.
+2025-02-25 22:07:58,121 - INFO - Making predictions.
+2025-02-25 22:07:58,232 - INFO - Prediction successful: 118.2299575805664
+2025-02-25 22:07:58,232 - ERROR - Error in /api/predict: Object of type float32 is not JSON serializable
+2025-02-25 22:07:58,232 - INFO - 127.0.0.1 - - [25/Feb/2025 22:07:58] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2025-02-25 22:07:58,364 - INFO - Received prediction request.
+2025-02-25 22:07:58,364 - INFO - Preprocessing input data.
+2025-02-25 22:07:58,364 - INFO - Making predictions.
+2025-02-25 22:07:58,514 - INFO - Prediction successful: 118.2299575805664
+2025-02-25 22:07:58,514 - ERROR - Error in /api/predict: Object of type float32 is not JSON serializable
+2025-02-25 22:07:58,514 - INFO - 127.0.0.1 - - [25/Feb/2025 22:07:58] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2025-02-25 22:07:58,749 - INFO - Received prediction request.
+2025-02-25 22:07:58,749 - INFO - Preprocessing input data.
+2025-02-25 22:07:58,749 - INFO - Making predictions.
+2025-02-25 22:07:58,878 - INFO - Prediction successful: 118.2299575805664
+2025-02-25 22:07:58,878 - ERROR - Error in /api/predict: Object of type float32 is not JSON serializable
+2025-02-25 22:07:58,880 - INFO - 127.0.0.1 - - [25/Feb/2025 22:07:58] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2025-02-25 22:07:58,923 - INFO - Received prediction request.
+2025-02-25 22:07:58,924 - INFO - Preprocessing input data.
+2025-02-25 22:07:58,925 - INFO - Making predictions.
+2025-02-25 22:07:59,052 - INFO - Prediction successful: 118.2299575805664
+2025-02-25 22:07:59,053 - ERROR - Error in /api/predict: Object of type float32 is not JSON serializable
+2025-02-25 22:07:59,053 - INFO - 127.0.0.1 - - [25/Feb/2025 22:07:59] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2025-02-25 22:08:03,995 - INFO - Received request for historical data.
+2025-02-25 22:08:03,995 - INFO - Returning filtered data.
+2025-02-25 22:08:03,995 - INFO - Received request for event analysis.
+2025-02-25 22:08:04,015 - INFO - Calculating model performance metrics.
+2025-02-25 22:08:04,063 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 22:08:04,065 - INFO - 127.0.0.1 - - [25/Feb/2025 22:08:04] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 22:08:04,182 - INFO - Received request for historical data.
+2025-02-25 22:08:04,229 - INFO - Received request for event analysis.
+2025-02-25 22:08:04,245 - INFO - Returning filtered data.
+2025-02-25 22:08:04,268 - INFO - 127.0.0.1 - - [25/Feb/2025 22:08:04] "GET /api/data HTTP/1.1" 200 -
+2025-02-25 22:08:04,270 - INFO - Calculating model performance metrics.
+2025-02-25 22:08:04,344 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 22:08:04,360 - INFO - 127.0.0.1 - - [25/Feb/2025 22:08:04] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 22:08:04,460 - INFO - Calculating model performance metrics.
+2025-02-25 22:08:04,477 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 22:08:04,513 - INFO - 127.0.0.1 - - [25/Feb/2025 22:08:04] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 22:08:04,530 - INFO - 127.0.0.1 - - [25/Feb/2025 22:08:04] "GET /api/data HTTP/1.1" 200 -
+2025-02-25 22:08:04,541 - INFO - Received request for historical data.
+2025-02-25 22:08:04,543 - INFO - Returning filtered data.
+2025-02-25 22:08:04,820 - INFO - 127.0.0.1 - - [25/Feb/2025 22:08:04] "GET /api/data HTTP/1.1" 200 -
+2025-02-25 22:08:04,848 - INFO - Returning event analysis results.
+2025-02-25 22:08:04,848 - INFO - 127.0.0.1 - - [25/Feb/2025 22:08:04] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 22:08:04,866 - INFO - Returning event analysis results.
+2025-02-25 22:08:04,867 - INFO - 127.0.0.1 - - [25/Feb/2025 22:08:04] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 22:08:04,870 - INFO - Received request for event analysis.
+2025-02-25 22:08:04,903 - INFO - Returning event analysis results.
+2025-02-25 22:08:04,903 - INFO - 127.0.0.1 - - [25/Feb/2025 22:08:04] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 22:10:44,560 - INFO -  * Detected change in 'c:\\Users\\HP\\Documents\\Dagii\\week 10\\brent-price-change-analysis\\oil-price-dashboard\\backend\\app.py', reloading
+2025-02-25 22:10:45,376 - INFO -  * Restarting with stat
+2025-02-25 22:10:52,422 - INFO - Logging initialized.
+2025-02-25 22:10:52,422 - INFO - Loading LSTM model and scalers...
+2025-02-25 22:10:52,571 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 22:10:52,572 - INFO - Model and scalers loaded successfully.
+2025-02-25 22:10:52,572 - INFO - Loading datasets...
+2025-02-25 22:10:53,356 - INFO - Datasets loaded successfully.
+2025-02-25 22:10:53,376 - WARNING -  * Debugger is active!
+2025-02-25 22:10:53,379 - INFO -  * Debugger PIN: 105-113-212
+2025-02-25 22:11:12,893 - INFO - Received request for historical data.
+2025-02-25 22:11:12,895 - INFO - Received request for event analysis.
+2025-02-25 22:11:12,896 - INFO - Returning filtered data.
+2025-02-25 22:11:12,901 - INFO - Calculating model performance metrics.
+2025-02-25 22:11:12,903 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 22:11:12,906 - INFO - 127.0.0.1 - - [25/Feb/2025 22:11:12] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 22:11:12,994 - INFO - Calculating model performance metrics.
+2025-02-25 22:11:13,059 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 22:11:13,093 - INFO - 127.0.0.1 - - [25/Feb/2025 22:11:13] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 22:11:13,163 - INFO - 127.0.0.1 - - [25/Feb/2025 22:11:13] "GET /api/data HTTP/1.1" 200 -
+2025-02-25 22:11:13,163 - INFO - Received request for historical data.
+2025-02-25 22:11:13,163 - INFO - Returning filtered data.
+2025-02-25 22:11:13,478 - INFO - 127.0.0.1 - - [25/Feb/2025 22:11:13] "GET /api/data HTTP/1.1" 200 -
+2025-02-25 22:11:13,515 - INFO - Returning event analysis results.
+2025-02-25 22:11:13,515 - INFO - 127.0.0.1 - - [25/Feb/2025 22:11:13] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 22:11:13,521 - INFO - Received request for event analysis.
+2025-02-25 22:11:13,565 - INFO - Returning event analysis results.
+2025-02-25 22:11:13,565 - INFO - 127.0.0.1 - - [25/Feb/2025 22:11:13] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 22:11:20,875 - INFO - 127.0.0.1 - - [25/Feb/2025 22:11:20] "OPTIONS /api/predict HTTP/1.1" 200 -
+2025-02-25 22:11:20,880 - INFO - Received prediction request.
+2025-02-25 22:11:20,880 - INFO - Preprocessing input data.
+2025-02-25 22:11:20,883 - INFO - Making predictions.
+2025-02-25 22:11:21,287 - INFO - Prediction successful: 118.2299575805664
+2025-02-25 22:11:21,287 - ERROR - Error in /api/predict: Object of type float32 is not JSON serializable
+2025-02-25 22:11:21,287 - INFO - 127.0.0.1 - - [25/Feb/2025 22:11:21] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2025-02-25 22:11:21,318 - INFO - Received prediction request.
+2025-02-25 22:11:21,319 - INFO - Preprocessing input data.
+2025-02-25 22:11:21,320 - INFO - Making predictions.
+2025-02-25 22:11:21,437 - INFO - Prediction successful: 118.2299575805664
+2025-02-25 22:11:21,437 - ERROR - Error in /api/predict: Object of type float32 is not JSON serializable
+2025-02-25 22:11:21,438 - INFO - 127.0.0.1 - - [25/Feb/2025 22:11:21] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2025-02-25 22:11:21,535 - INFO - Received prediction request.
+2025-02-25 22:11:21,536 - INFO - Preprocessing input data.
+2025-02-25 22:11:21,537 - INFO - Making predictions.
+2025-02-25 22:11:21,667 - INFO - Prediction successful: 118.2299575805664
+2025-02-25 22:11:21,668 - ERROR - Error in /api/predict: Object of type float32 is not JSON serializable
+2025-02-25 22:11:21,668 - INFO - 127.0.0.1 - - [25/Feb/2025 22:11:21] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2025-02-25 22:11:21,759 - INFO - Received prediction request.
+2025-02-25 22:11:21,760 - INFO - Preprocessing input data.
+2025-02-25 22:11:21,761 - INFO - Making predictions.
+2025-02-25 22:11:21,901 - INFO - Prediction successful: 118.2299575805664
+2025-02-25 22:11:21,901 - ERROR - Error in /api/predict: Object of type float32 is not JSON serializable
+2025-02-25 22:11:21,901 - INFO - 127.0.0.1 - - [25/Feb/2025 22:11:21] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2025-02-25 22:11:21,926 - INFO - Received prediction request.
+2025-02-25 22:11:21,926 - INFO - Preprocessing input data.
+2025-02-25 22:11:21,928 - INFO - Making predictions.
+2025-02-25 22:11:22,082 - INFO - Prediction successful: 118.2299575805664
+2025-02-25 22:11:22,082 - ERROR - Error in /api/predict: Object of type float32 is not JSON serializable
+2025-02-25 22:11:22,083 - INFO - 127.0.0.1 - - [25/Feb/2025 22:11:22] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2025-02-25 22:14:03,774 - INFO - Received request for historical data.
+2025-02-25 22:14:03,775 - INFO - Received request for event analysis.
+2025-02-25 22:14:03,776 - INFO - Returning filtered data.
+2025-02-25 22:14:03,778 - INFO - Calculating model performance metrics.
+2025-02-25 22:14:03,780 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 22:14:03,782 - INFO - 127.0.0.1 - - [25/Feb/2025 22:14:03] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 22:14:03,869 - INFO - Calculating model performance metrics.
+2025-02-25 22:14:03,899 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 22:14:03,945 - INFO - 127.0.0.1 - - [25/Feb/2025 22:14:03] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 22:14:04,040 - INFO - 127.0.0.1 - - [25/Feb/2025 22:14:04] "GET /api/data HTTP/1.1" 200 -
+2025-02-25 22:14:04,040 - INFO - Received request for historical data.
+2025-02-25 22:14:04,040 - INFO - Returning filtered data.
+2025-02-25 22:14:04,330 - INFO - 127.0.0.1 - - [25/Feb/2025 22:14:04] "GET /api/data HTTP/1.1" 200 -
+2025-02-25 22:14:04,348 - INFO - Returning event analysis results.
+2025-02-25 22:14:04,349 - INFO - 127.0.0.1 - - [25/Feb/2025 22:14:04] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 22:14:04,349 - INFO - Received request for event analysis.
+2025-02-25 22:14:04,381 - INFO - Returning event analysis results.
+2025-02-25 22:14:04,382 - INFO - 127.0.0.1 - - [25/Feb/2025 22:14:04] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 22:14:11,874 - INFO - 127.0.0.1 - - [25/Feb/2025 22:14:11] "OPTIONS /api/predict HTTP/1.1" 200 -
+2025-02-25 22:14:11,880 - INFO - Received prediction request.
+2025-02-25 22:14:11,881 - INFO - Preprocessing input data.
+2025-02-25 22:14:11,882 - INFO - Making predictions.
+2025-02-25 22:14:11,993 - INFO - Prediction successful: 118.2299575805664
+2025-02-25 22:14:11,994 - ERROR - Error in /api/predict: Object of type float32 is not JSON serializable
+2025-02-25 22:14:11,994 - INFO - 127.0.0.1 - - [25/Feb/2025 22:14:11] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2025-02-25 22:14:41,785 - INFO - Received request for historical data.
+2025-02-25 22:14:41,786 - INFO - Returning filtered data.
+2025-02-25 22:14:41,787 - INFO - Received request for event analysis.
+2025-02-25 22:14:41,806 - INFO - Calculating model performance metrics.
+2025-02-25 22:14:42,062 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 22:14:42,098 - INFO - 127.0.0.1 - - [25/Feb/2025 22:14:42] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 22:14:42,199 - INFO - Calculating model performance metrics.
+2025-02-25 22:14:42,217 - INFO - 127.0.0.1 - - [25/Feb/2025 22:14:42] "GET /api/data HTTP/1.1" 200 -
+2025-02-25 22:14:42,217 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 22:14:42,217 - INFO - 127.0.0.1 - - [25/Feb/2025 22:14:42] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 22:14:42,228 - INFO - Received request for historical data.
+2025-02-25 22:14:42,230 - INFO - Returning filtered data.
+2025-02-25 22:14:42,466 - INFO - 127.0.0.1 - - [25/Feb/2025 22:14:42] "GET /api/data HTTP/1.1" 200 -
+2025-02-25 22:14:42,483 - INFO - Returning event analysis results.
+2025-02-25 22:14:42,483 - INFO - 127.0.0.1 - - [25/Feb/2025 22:14:42] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 22:14:42,500 - INFO - Received request for event analysis.
+2025-02-25 22:14:42,524 - INFO - Returning event analysis results.
+2025-02-25 22:14:42,525 - INFO - 127.0.0.1 - - [25/Feb/2025 22:14:42] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 22:16:22,484 - INFO - Received request for historical data.
+2025-02-25 22:16:22,486 - INFO - Returning filtered data.
+2025-02-25 22:16:22,486 - INFO - Received request for event analysis.
+2025-02-25 22:16:22,490 - INFO - Calculating model performance metrics.
+2025-02-25 22:16:22,531 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 22:16:22,560 - INFO - 127.0.0.1 - - [25/Feb/2025 22:16:22] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 22:16:22,603 - INFO - Calculating model performance metrics.
+2025-02-25 22:16:22,664 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 22:16:22,695 - INFO - 127.0.0.1 - - [25/Feb/2025 22:16:22] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 22:16:22,803 - INFO - 127.0.0.1 - - [25/Feb/2025 22:16:22] "GET /api/data HTTP/1.1" 200 -
+2025-02-25 22:16:22,803 - INFO - Received request for historical data.
+2025-02-25 22:16:22,805 - INFO - Returning filtered data.
+2025-02-25 22:16:22,806 - INFO - Received request for event analysis.
+2025-02-25 22:16:22,829 - INFO - Calculating model performance metrics.
+2025-02-25 22:16:22,841 - INFO - Received request for historical data.
+2025-02-25 22:16:22,850 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 22:16:22,865 - INFO - Returning filtered data.
+2025-02-25 22:16:22,888 - INFO - 127.0.0.1 - - [25/Feb/2025 22:16:22] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 22:16:23,159 - INFO - Calculating model performance metrics.
+2025-02-25 22:16:23,194 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 22:16:23,228 - INFO - 127.0.0.1 - - [25/Feb/2025 22:16:23] "GET /api/data HTTP/1.1" 200 -
+2025-02-25 22:16:23,228 - INFO - 127.0.0.1 - - [25/Feb/2025 22:16:23] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 22:16:23,276 - INFO - 127.0.0.1 - - [25/Feb/2025 22:16:23] "GET /api/data HTTP/1.1" 200 -
+2025-02-25 22:16:23,277 - INFO - Received request for historical data.
+2025-02-25 22:16:23,285 - INFO - Returning filtered data.
+2025-02-25 22:16:23,537 - INFO - 127.0.0.1 - - [25/Feb/2025 22:16:23] "GET /api/data HTTP/1.1" 200 -
+2025-02-25 22:16:23,563 - INFO - Returning event analysis results.
+2025-02-25 22:16:23,566 - INFO - 127.0.0.1 - - [25/Feb/2025 22:16:23] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 22:16:23,571 - INFO - Received request for event analysis.
+2025-02-25 22:16:23,585 - INFO - Returning event analysis results.
+2025-02-25 22:16:23,586 - INFO - 127.0.0.1 - - [25/Feb/2025 22:16:23] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 22:16:23,591 - INFO - Received request for event analysis.
+2025-02-25 22:16:23,629 - INFO - Returning event analysis results.
+2025-02-25 22:16:23,629 - INFO - 127.0.0.1 - - [25/Feb/2025 22:16:23] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 22:16:23,650 - INFO - Returning event analysis results.
+2025-02-25 22:16:23,651 - INFO - 127.0.0.1 - - [25/Feb/2025 22:16:23] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 22:18:54,723 - INFO - Received request for historical data.
+2025-02-25 22:18:54,724 - INFO - Returning filtered data.
+2025-02-25 22:18:54,725 - INFO - Received request for event analysis.
+2025-02-25 22:18:54,757 - INFO - Calculating model performance metrics.
+2025-02-25 22:18:54,788 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 22:18:54,804 - INFO - 127.0.0.1 - - [25/Feb/2025 22:18:54] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 22:18:54,870 - INFO - Calculating model performance metrics.
+2025-02-25 22:18:54,920 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 22:18:54,938 - INFO - 127.0.0.1 - - [25/Feb/2025 22:18:54] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 22:18:55,035 - INFO - 127.0.0.1 - - [25/Feb/2025 22:18:55] "GET /api/data HTTP/1.1" 200 -
+2025-02-25 22:18:55,040 - INFO - Received request for historical data.
+2025-02-25 22:18:55,042 - INFO - Returning filtered data.
+2025-02-25 22:18:55,300 - INFO - 127.0.0.1 - - [25/Feb/2025 22:18:55] "GET /api/data HTTP/1.1" 200 -
+2025-02-25 22:18:55,316 - INFO - Returning event analysis results.
+2025-02-25 22:18:55,317 - INFO - 127.0.0.1 - - [25/Feb/2025 22:18:55] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 22:18:55,321 - INFO - Received request for event analysis.
+2025-02-25 22:18:55,336 - INFO - Returning event analysis results.
+2025-02-25 22:18:55,336 - INFO - 127.0.0.1 - - [25/Feb/2025 22:18:55] "GET /api/events HTTP/1.1" 200 -
 2025-02-25 19:36:21,025 - INFO - Logging initialized.
 2025-02-25 19:36:21,026 - INFO - Loading LSTM model and scalers...
 2025-02-25 19:36:21,239 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.

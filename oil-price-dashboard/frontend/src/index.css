@@ -1,0 +1,194 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5; /* Soft background color */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+  background: #007BFF; /* Primary color */
+  color: #fff;
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #e0e0e0; /* Light grey for navigation */
+  padding: 10px 0;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #007BFF; /* Link color */
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background: #007BFF; /* Hover background color */
+  color: #fff; /* Hover text color */
+}
+
+/* Main Content Styles */
+main {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Container for Charts and Stats */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px; /* Limit max width */
+}
+
+/* Card Styles */
+.card {
+  background: white; /* White card background */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  padding: 20px;
+  width: 100%; /* Ensure cards take full width on small screens */
+  transition: transform 0.2s; /* Add transition for transform */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+}
+
+/* Typography Styles */
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+  color: #333; /* Dark text for contrast */
+}
+
+h5 {
+  margin-bottom: 10px;
+  color: #555; /* Slightly lighter for subtitles */
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column; /* Stack inputs vertically on small screens */
+  gap: 10px; /* Add spacing between inputs */
+  margin-bottom: 20px;
+  width: 100%; /* Full width on small screens */
+}
+
+input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px;
+  width: 100%; /* Full width on small screens */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #007BFF; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s; /* Add transition for transform */
+  width: 100%; /* Full width on small screens */
+}
+
+button:hover {
+  background: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Results Container Styles */
+#searchResults {
+  margin-top: 20px;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  width: 100%; /* Full width on small screens */
+}
+
+/* Table Styles */
+table {
+  width: 100%; /* Full width on small screens */
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd; /* Light border for rows */
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light background for even rows */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+  nav a {
+    margin: 5px;
+    font-size: 14px;
+  }
+
+  input[type="number"],
+  button {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .container {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+
+  .card {
+    padding: 15px; /* Reduce padding on small screens */
+  }
+}
+
+@media (max-width: 400px) {
+  h2 {
+    font-size: 18px; /* Smaller heading on very small screens */
+  }
+
+  nav a {
+    margin: 3px; /* Even smaller margin on very small screens */
+    font-size: 12px; /* Smaller font size */
+  }
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #007BFF; /* Footer color */
+  color: white;
+  margin-top: auto; /* Stick to the bottom */
+}
