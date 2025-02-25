@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import logging
 from pathlib import Path
+import joblib 
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import TimeSeriesSplit
@@ -34,7 +35,7 @@ class PricePredictor:
         self.logger = logging.getLogger(__name__)
         self.logger.info("Logging initialized.")
 
-    def load_data(self, data_path="data"):
+    def load_data(self, data_path="../data"):
         """Load and prepare the data from CSV files."""
         try:
             self.logger.info("Loading data from CSV files...")
@@ -167,43 +168,59 @@ class PricePredictor:
         else:
             logging.error("LSTM model training failed.")
 
-    def train_and_evaluate(self, n_splits=5):
-        """Train and evaluate the LSTM model using time series cross-validation."""
-        if self.X is None or self.y is None:
-            self.logger.error("Data not loaded. Please load data first using load_data().")
-            return None
+    import joblib  # Add this import at the top of your script
 
-        self.logger.info("Starting time series cross-validation...")
-        tscv = TimeSeriesSplit(n_splits=n_splits)
-        lstm_scores = []
+def train_and_evaluate(self, n_splits=5):
+    """Train and evaluate the LSTM model using time series cross-validation."""
+    if self.X is None or self.y is None:
+        self.logger.error("Data not loaded. Please load data first using load_data().")
+        return None
 
-        for train_index, test_index in tscv.split(self.X):
-            X_train, X_test = self.X.iloc[train_index], self.X.iloc[test_index]
-            y_train, y_test = self.y.iloc[train_index], self.y.iloc[test_index]
+    self.logger.info("Starting time series cross-validation...")
+    tscv = TimeSeriesSplit(n_splits=n_splits)
+    lstm_scores = []
+    y_true_list = []  # Store actual values
+    y_pred_list = []  # Store predicted values
 
-            # LSTM Model
-            lstm_model, X_scaler, y_scaler = self.build_lstm_model(X_train, y_train)
-            if lstm_model is not None:
-                # Prepare test data
-                X_test_scaled = X_scaler.transform(X_test)
-                X_test_lstm = X_test_scaled.reshape((X_test_scaled.shape[0], 1, X_test_scaled.shape[1]))
-                
-                # Make predictions
-                lstm_forecast = lstm_model.predict(X_test_lstm)
-                lstm_forecast = y_scaler.inverse_transform(lstm_forecast)
-                
-                # Evaluate performance
-                mse = mean_squared_error(y_test, lstm_forecast.flatten())
-                lstm_scores.append(mse)
-                self.logger.info(f"Fold MSE: {mse:.4f}")
+    for train_index, test_index in tscv.split(self.X):
+        X_train, X_test = self.X.iloc[train_index], self.X.iloc[test_index]
+        y_train, y_test = self.y.iloc[train_index], self.y.iloc[test_index]
 
-        # Calculate average MSE
-        avg_lstm_mse = np.mean(lstm_scores) if lstm_scores else None
+        # LSTM Model
+        lstm_model, X_scaler, y_scaler = self.build_lstm_model(X_train, y_train)
+        if lstm_model is not None:
+            # Prepare test data
+            X_test_scaled = X_scaler.transform(X_test)
+            X_test_lstm = X_test_scaled.reshape((X_test_scaled.shape[0], 1, X_test_scaled.shape[1]))
+            
+            # Make predictions
+            lstm_forecast = lstm_model.predict(X_test_lstm)
+            lstm_forecast = y_scaler.inverse_transform(lstm_forecast)
+            
+            # Store actual and predicted values
+            y_true_list.extend(y_test.values)
+            y_pred_list.extend(lstm_forecast.flatten())
+            
+            # Evaluate performance
+            mse = mean_squared_error(y_test, lstm_forecast.flatten())
+            lstm_scores.append(mse)
+            self.logger.info(f"Fold MSE: {mse:.4f}")
 
-        # Print evaluation results
-        self.logger.info("\nCross-Validation Model Evaluation Results:")
-        if avg_lstm_mse is not None:
-            self.logger.info(f"LSTM - Average MSE: {avg_lstm_mse:.4f}")
+    # Calculate average MSE
+    avg_lstm_mse = np.mean(lstm_scores) if lstm_scores else None
+
+    # Print evaluation results
+    self.logger.info("\nCross-Validation Model Evaluation Results:")
+    if avg_lstm_mse is not None:
+        self.logger.info(f"LSTM - Average MSE: {avg_lstm_mse:.4f}")
+
+    # Save evaluation results
+    evaluation_results = {
+        'y_true': y_true_list,
+        'y_pred': y_pred_list
+    }
+    joblib.dump(evaluation_results, "evaluation_results.pkl")
+    self.logger.info("Evaluation results saved to 'evaluation_results.pkl'.")
 
 # Example usage
 if __name__ == "__main__":

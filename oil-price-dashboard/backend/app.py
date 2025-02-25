@@ -218,21 +218,16 @@ def get_metrics():
     try:
         logger.info("Calculating model performance metrics.")
         
-        # Load or calculate actual and predicted values
-        # Replace this with your actual evaluation logic
-        y_true = []  # Actual oil prices from the test set
-        y_pred = []  # Predicted oil prices from the model
-
-        # Example: Evaluate the model on a test set
-        # X_test, y_true = load_test_data()  # Load test data
-        # y_pred = model.predict(X_test)  # Make predictions
-        # y_pred = y_scaler.inverse_transform(y_pred)  # Inverse transform if needed
+        # Load evaluation results
+        try:
+            evaluation_results = joblib.load("evaluation_results.pkl")
+            y_true = evaluation_results['y_true']
+            y_pred = evaluation_results['y_pred']
+        except FileNotFoundError:
+            logger.error("Evaluation results not found. Please train and evaluate the model first.")
+            return jsonify({"error": "Evaluation results not found. Please train and evaluate the model first."}), 404
 
         # Calculate metrics
-        if len(y_true) == 0 or len(y_pred) == 0:
-            logger.error("No evaluation data found.")
-            return jsonify({"error": "No evaluation data available. Please evaluate the model first."}), 404
-
         mse = mean_squared_error(y_true, y_pred)  # Mean Squared Error
         rmse = np.sqrt(mse)  # Root Mean Squared Error
         mae = mean_absolute_error(y_true, y_pred)  # Mean Absolute Error
