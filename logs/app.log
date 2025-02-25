@@ -1,0 +1,40 @@
+2025-02-25 15:47:01,085 - INFO - Logging initialized.
+2025-02-25 15:47:01,097 - INFO - Loading LSTM model and scalers...
+2025-02-25 15:47:01,338 - ERROR - Error loading model or scalers: Could not locate function 'mse'. Make sure custom classes are decorated with `@keras.saving.register_keras_serializable()`. Full object config: {'module': 'keras.metrics', 'class_name': 'function', 'config': 'mse', 'registered_name': 'mse'}
+2025-02-25 15:47:28,163 - INFO - Logging initialized.
+2025-02-25 15:47:28,167 - INFO - Loading LSTM model and scalers...
+2025-02-25 15:47:28,289 - ERROR - Error loading model or scalers: Could not locate function 'mse'. Make sure custom classes are decorated with `@keras.saving.register_keras_serializable()`. Full object config: {'module': 'keras.metrics', 'class_name': 'function', 'config': 'mse', 'registered_name': 'mse'}
+2025-02-25 15:51:50,936 - INFO - Logging initialized.
+2025-02-25 15:51:50,939 - INFO - Loading LSTM model and scalers...
+2025-02-25 15:51:51,094 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 15:51:51,150 - INFO - Model and scalers loaded successfully.
+2025-02-25 15:51:51,151 - INFO - Loading datasets...
+2025-02-25 15:51:51,843 - INFO - Datasets loaded successfully.
+2025-02-25 15:51:51,846 - INFO - Starting Flask app.
+2025-02-25 15:51:51,967 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-25 15:51:51,973 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-25 15:51:51,992 - INFO -  * Restarting with stat
+2025-02-25 15:51:58,577 - INFO - Logging initialized.
+2025-02-25 15:51:58,578 - INFO - Loading LSTM model and scalers...
+2025-02-25 15:51:58,707 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 15:51:58,721 - INFO - Model and scalers loaded successfully.
+2025-02-25 15:51:58,721 - INFO - Loading datasets...
+2025-02-25 15:51:59,233 - INFO - Datasets loaded successfully.
+2025-02-25 15:51:59,236 - INFO - Starting Flask app.
+2025-02-25 15:51:59,245 - WARNING -  * Debugger is active!
+2025-02-25 15:51:59,251 - INFO -  * Debugger PIN: 105-113-212
+2025-02-25 15:52:17,942 - INFO - 127.0.0.1 - - [25/Feb/2025 15:52:17] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-25 15:52:18,027 - INFO - 127.0.0.1 - - [25/Feb/2025 15:52:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 15:52:19,088 - INFO - 127.0.0.1 - - [25/Feb/2025 15:52:19] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-25 15:52:19,598 - INFO - 127.0.0.1 - - [25/Feb/2025 15:52:19] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-25 15:52:19,812 - INFO - 127.0.0.1 - - [25/Feb/2025 15:52:19] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-25 15:52:20,001 - INFO - 127.0.0.1 - - [25/Feb/2025 15:52:20] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-25 15:53:42,730 - INFO - 127.0.0.1 - - [25/Feb/2025 15:53:42] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-25 15:53:42,773 - INFO - 127.0.0.1 - - [25/Feb/2025 15:53:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 15:53:46,043 - INFO - 127.0.0.1 - - [25/Feb/2025 15:53:46] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-25 15:53:46,084 - INFO - 127.0.0.1 - - [25/Feb/2025 15:53:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 15:53:46,639 - INFO - 127.0.0.1 - - [25/Feb/2025 15:53:46] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-25 15:53:46,691 - INFO - 127.0.0.1 - - [25/Feb/2025 15:53:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 15:53:46,885 - INFO - 127.0.0.1 - - [25/Feb/2025 15:53:46] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-25 15:53:46,936 - INFO - 127.0.0.1 - - [25/Feb/2025 15:53:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

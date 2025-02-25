@@ -3,6 +3,7 @@ from flask_cors import CORS
 import pandas as pd
 import joblib
 from tensorflow.keras.models import load_model
+from tensorflow.keras.metrics import MeanSquaredError  # Fix for 'mse' error
 import numpy as np
 from pathlib import Path
 import logging
@@ -32,7 +33,8 @@ logger.info("Logging initialized.")
 # Load the LSTM model and scalers
 try:
     logger.info("Loading LSTM model and scalers...")
-    model = load_model("models/lstm_model.h5")
+    # Fix: Provide custom_objects for 'mse'
+    model = load_model("models/lstm_model.h5", custom_objects={'mse': MeanSquaredError()})
     X_scaler = joblib.load("models/X_scaler.pkl")
     y_scaler = joblib.load("models/y_scaler.pkl")
     logger.info("Model and scalers loaded successfully.")
