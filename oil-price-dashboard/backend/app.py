@@ -13,6 +13,9 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 # Initialize Flask app
 app = Flask(__name__)
 CORS(app)  # Enable CORS for React frontend
+@app.route('/')
+def home():
+    return "Oil Price Analysis API is running!", 200
 
 # Set up logging
 log_dir = Path("logs")
