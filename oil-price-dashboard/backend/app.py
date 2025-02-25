@@ -134,8 +134,9 @@ def get_data():
         if start_date and end_date:
             logger.info(f"Filtering data from {start_date} to {end_date}.")
             filtered_data = filtered_data[
-                (filtered_data.index >= start_date) & (filtered_data.index <= end_date)
-        
+                (filtered_data.index >= pd.to_datetime(start_date)) & (filtered_data.index <= pd.to_datetime(end_date))
+            ]
+
         logger.info("Returning filtered data.")
         return jsonify(filtered_data.reset_index().to_dict(orient="records"))
     except Exception as e:

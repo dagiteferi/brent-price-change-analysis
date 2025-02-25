@@ -7,3 +7,5 @@ statsmodels
 wbdata
 sklearn
 tensorflow
+flask
+flask_cors
