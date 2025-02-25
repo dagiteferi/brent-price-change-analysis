@@ -76,3 +76,18 @@
 2025-02-25 15:58:24,150 - INFO - 127.0.0.1 - - [25/Feb/2025 15:58:24] "GET / HTTP/1.1" 200 -
 2025-02-25 15:58:24,150 - INFO - 127.0.0.1 - - [25/Feb/2025 15:58:24] "[35m[1mGET /api/metrics HTTP/1.1[0m" 500 -
 2025-02-25 15:58:29,593 - INFO - 127.0.0.1 - - [25/Feb/2025 15:58:29] "GET / HTTP/1.1" 200 -
+2025-02-25 16:07:44,396 - INFO -  * Detected change in 'c:\\Users\\HP\\Documents\\Dagii\\week 10\\brent-price-change-analysis\\oil-price-dashboard\\backend\\app.py', reloading
+2025-02-25 16:07:44,929 - INFO -  * Restarting with stat
+2025-02-25 16:07:49,747 - INFO - Logging initialized.
+2025-02-25 16:07:49,747 - INFO - Loading LSTM model and scalers...
+2025-02-25 16:07:49,848 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 16:07:49,865 - INFO - Model and scalers loaded successfully.
+2025-02-25 16:07:49,865 - INFO - Loading datasets...
+2025-02-25 16:07:50,366 - INFO - Datasets loaded successfully.
+2025-02-25 16:07:50,367 - INFO - Starting Flask app.
+2025-02-25 16:07:50,367 - WARNING -  * Debugger is active!
+2025-02-25 16:07:50,379 - INFO -  * Debugger PIN: 105-113-212
+2025-02-25 16:07:52,436 - INFO - 127.0.0.1 - - [25/Feb/2025 16:07:52] "GET / HTTP/1.1" 200 -
+2025-02-25 16:07:52,487 - INFO - 127.0.0.1 - - [25/Feb/2025 16:07:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 16:08:19,059 - INFO -  * Detected change in 'c:\\Users\\HP\\Documents\\Dagii\\week 10\\brent-price-change-analysis\\oil-price-dashboard\\backend\\app.py', reloading
+2025-02-25 16:08:19,639 - INFO -  * Restarting with stat

@@ -13,6 +13,7 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 # Initialize Flask app
 app = Flask(__name__)
 CORS(app)  # Enable CORS for React frontend
+
 @app.route('/')
 def home():
     return "Oil Price Analysis API is running!", 200
@@ -34,6 +35,10 @@ logger = logging.getLogger(__name__)
 logger.info("Logging initialized.")
 
 # Load the LSTM model and scalers
+model = None
+X_scaler = None
+y_scaler = None
+
 try:
     logger.info("Loading LSTM model and scalers...")
     # Fix: Provide custom_objects for 'mse'
@@ -43,9 +48,10 @@ try:
     logger.info("Model and scalers loaded successfully.")
 except Exception as e:
     logger.error(f"Error loading model or scalers: {str(e)}")
-    raise
+    logger.warning("Model or scalers not found. Predictions will not work.")
 
 # Load datasets
+oil_data = None
 data_dir = Path("data")
 try:
     logger.info("Loading datasets...")
@@ -55,7 +61,7 @@ try:
     logger.info("Datasets loaded successfully.")
 except Exception as e:
     logger.error(f"Error loading datasets: {str(e)}")
-    raise
+    logger.warning("Dataset not found. Historical data and event analysis will not work.")
 
 # Define significant events
 significant_events = {
@@ -131,6 +137,10 @@ def analyze_events(df):
 def get_data():
     """Return historical oil price data, optionally filtered by date range."""
     try:
+        if oil_data is None:
+            logger.error("Dataset not loaded.")
+            return jsonify({"error": "Dataset not found. Please ensure the data file is available."}), 404
+
         logger.info("Received request for historical data.")
         start_date = request.args.get('start_date')
         end_date = request.args.get('end_date')
@@ -152,6 +162,10 @@ def get_data():
 def get_events():
     """Return event analysis results."""
     try:
+        if oil_data is None:
+            logger.error("Dataset not loaded.")
+            return jsonify({"error": "Dataset not found. Please ensure the data file is available."}), 404
+
         logger.info("Received request for event analysis.")
         event_results = analyze_events(oil_data)
         logger.info("Returning event analysis results.")
@@ -164,6 +178,10 @@ def get_events():
 def predict():
     """Make predictions using the LSTM model."""
     try:
+        if model is None or X_scaler is None or y_scaler is None:
+            logger.error("Model or scalers not loaded.")
+            return jsonify({"error": "Model or scalers not found. Please ensure the model files are available."}), 404
+
         logger.info("Received prediction request.")
         data = request.get_json()
         input_data = np.array([[
@@ -225,3 +243,12 @@ def get_metrics():
 if __name__ == '__main__':
     logger.info("Starting Flask app.")
     app.run(debug=True)
+
+
+#     GET /api/data: Retrieve historical oil price data (optionally filtered by start_date and end_date).
+
+# GET /api/events: Retrieve analysis of significant events and their impact on oil prices.
+
+# POST /api/predict: Make predictions using the LSTM model.
+
+# GET /api/metrics: Retrieve model performance metrics.
