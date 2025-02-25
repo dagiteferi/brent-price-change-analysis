@@ -245,14 +245,4 @@ def get_metrics():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    logger.info("Starting Flask app.")
     app.run(debug=True)
-
-
-#     GET /api/data: Retrieve historical oil price data (optionally filtered by start_date and end_date).
-
-# GET /api/events: Retrieve analysis of significant events and their impact on oil prices.
-
-# POST /api/predict: Make predictions using the LSTM model.
-
-# GET /api/metrics: Retrieve model performance metrics.

@@ -204,3 +204,259 @@
 2025-02-25 19:32:13,678 - INFO - Calculating model performance metrics.
 2025-02-25 19:32:13,679 - ERROR - Evaluation results not found. Please train and evaluate the model first.
 2025-02-25 19:32:13,680 - INFO - 127.0.0.1 - - [25/Feb/2025 19:32:13] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:33:59,463 - INFO - Logging initialized.
+2025-02-25 21:33:59,463 - INFO - Loading LSTM model and scalers...
+2025-02-25 21:33:59,647 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 21:33:59,685 - INFO - Model and scalers loaded successfully.
+2025-02-25 21:33:59,685 - INFO - Loading datasets...
+2025-02-25 21:34:00,260 - INFO - Datasets loaded successfully.
+2025-02-25 21:34:00,260 - INFO - Starting Flask app.
+2025-02-25 21:34:00,335 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-25 21:34:00,335 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-25 21:34:00,340 - INFO -  * Restarting with stat
+2025-02-25 21:34:06,054 - INFO - Logging initialized.
+2025-02-25 21:34:06,054 - INFO - Loading LSTM model and scalers...
+2025-02-25 21:34:06,166 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 21:34:06,174 - INFO - Model and scalers loaded successfully.
+2025-02-25 21:34:06,174 - INFO - Loading datasets...
+2025-02-25 21:34:06,796 - INFO - Datasets loaded successfully.
+2025-02-25 21:34:06,798 - INFO - Starting Flask app.
+2025-02-25 21:34:06,807 - WARNING -  * Debugger is active!
+2025-02-25 21:34:06,812 - INFO -  * Debugger PIN: 105-113-212
+2025-02-25 21:34:35,133 - INFO - Calculating model performance metrics.
+2025-02-25 21:34:35,133 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:34:35,134 - INFO - 127.0.0.1 - - [25/Feb/2025 21:34:35] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:34:36,451 - INFO - Calculating model performance metrics.
+2025-02-25 21:34:36,452 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:34:36,452 - INFO - 127.0.0.1 - - [25/Feb/2025 21:34:36] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:34:36,661 - INFO - Calculating model performance metrics.
+2025-02-25 21:34:36,661 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:34:36,662 - INFO - 127.0.0.1 - - [25/Feb/2025 21:34:36] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:34:36,893 - INFO - Calculating model performance metrics.
+2025-02-25 21:34:36,893 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:34:36,893 - INFO - 127.0.0.1 - - [25/Feb/2025 21:34:36] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:34:37,290 - INFO - Calculating model performance metrics.
+2025-02-25 21:34:37,290 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:34:37,291 - INFO - 127.0.0.1 - - [25/Feb/2025 21:34:37] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:34:37,486 - INFO - Calculating model performance metrics.
+2025-02-25 21:34:37,487 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:34:37,488 - INFO - 127.0.0.1 - - [25/Feb/2025 21:34:37] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:34:37,669 - INFO - Calculating model performance metrics.
+2025-02-25 21:34:37,670 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:34:37,670 - INFO - 127.0.0.1 - - [25/Feb/2025 21:34:37] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:34:37,842 - INFO - Calculating model performance metrics.
+2025-02-25 21:34:37,843 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:34:37,844 - INFO - 127.0.0.1 - - [25/Feb/2025 21:34:37] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:30,937 - INFO - Logging initialized.
+2025-02-25 21:41:30,937 - INFO - Loading LSTM model and scalers...
+2025-02-25 21:41:31,072 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 21:41:31,072 - INFO - Model and scalers loaded successfully.
+2025-02-25 21:41:31,072 - INFO - Loading datasets...
+2025-02-25 21:41:31,626 - INFO - Datasets loaded successfully.
+2025-02-25 21:41:31,629 - INFO - Starting Flask app.
+2025-02-25 21:41:31,639 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-25 21:41:31,639 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-25 21:41:31,655 - INFO -  * Restarting with stat
+2025-02-25 21:41:37,384 - INFO - Logging initialized.
+2025-02-25 21:41:37,385 - INFO - Loading LSTM model and scalers...
+2025-02-25 21:41:37,487 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 21:41:37,491 - INFO - Model and scalers loaded successfully.
+2025-02-25 21:41:37,491 - INFO - Loading datasets...
+2025-02-25 21:41:37,969 - INFO - Datasets loaded successfully.
+2025-02-25 21:41:37,971 - INFO - Starting Flask app.
+2025-02-25 21:41:37,977 - WARNING -  * Debugger is active!
+2025-02-25 21:41:37,982 - INFO -  * Debugger PIN: 105-113-212
+2025-02-25 21:41:52,222 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:52,223 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:52,225 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:52] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:53,434 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:53,435 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:53,436 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:53] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:53,625 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:53,627 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:53,627 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:53] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:53,842 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:53,842 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:53,842 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:53] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:54,031 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:54,031 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:54,032 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:54] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:54,242 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:54,242 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:54,242 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:54] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:54,437 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:54,437 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:54,438 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:54] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:55,934 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:55,934 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:55,935 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:55] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:55,968 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:41:57,393 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:57,394 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:57,395 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:57] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:57,430 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:41:57,675 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:57,675 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:57,677 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:57] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:57,710 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:41:57,914 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:57,915 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:57,915 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:57] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:57,948 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:41:58,147 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:58,147 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:58,147 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:58] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:58,190 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:41:58,343 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:58,343 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:58,343 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:58] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:58,379 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:41:58,538 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:58,539 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:58,540 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:58] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:58,570 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:41:58,753 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:58,753 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:58,755 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:58] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:58,793 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:41:58,944 - INFO - Calculating model performance metrics.
+2025-02-25 21:41:58,944 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:41:58,944 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:58] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:41:58,992 - INFO - 127.0.0.1 - - [25/Feb/2025 21:41:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:43:21,382 - INFO - Logging initialized.
+2025-02-25 21:43:21,383 - INFO - Loading LSTM model and scalers...
+2025-02-25 21:43:21,503 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 21:43:21,523 - INFO - Model and scalers loaded successfully.
+2025-02-25 21:43:21,523 - INFO - Loading datasets...
+2025-02-25 21:43:22,067 - INFO - Datasets loaded successfully.
+2025-02-25 21:43:22,067 - INFO - Starting Flask app.
+2025-02-25 21:43:22,091 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-25 21:43:22,091 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-25 21:43:22,091 - INFO -  * Restarting with stat
+2025-02-25 21:43:28,651 - INFO - Logging initialized.
+2025-02-25 21:43:28,651 - INFO - Loading LSTM model and scalers...
+2025-02-25 21:43:28,767 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 21:43:28,767 - INFO - Model and scalers loaded successfully.
+2025-02-25 21:43:28,767 - INFO - Loading datasets...
+2025-02-25 21:43:29,268 - INFO - Datasets loaded successfully.
+2025-02-25 21:43:29,268 - INFO - Starting Flask app.
+2025-02-25 21:43:29,284 - WARNING -  * Debugger is active!
+2025-02-25 21:43:29,289 - INFO -  * Debugger PIN: 105-113-212
+2025-02-25 21:43:33,520 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:33,521 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:33,522 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:33] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:34,465 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:34,466 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:34,467 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:34] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:34,718 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:34,718 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:34,718 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:34] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:34,943 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:34,943 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:34,944 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:34] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:35,134 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:35,134 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:35,134 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:35] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:35,334 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:35,334 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:35,334 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:35] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:35,517 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:35,517 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:35,517 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:35] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:35,725 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:35,725 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:35,726 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:35] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:36,907 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:36,907 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:36,907 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:36] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:36,957 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:43:37,212 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:37,212 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:37,212 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:37] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:37,251 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:43:37,394 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:37,394 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:37,394 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:37] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:37,446 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:43:37,663 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:37,663 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:37,663 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:37] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:37,705 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:43:37,894 - INFO - Calculating model performance metrics.
+2025-02-25 21:43:37,895 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:43:37,895 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:37] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:43:37,943 - INFO - 127.0.0.1 - - [25/Feb/2025 21:43:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:44:08,597 - INFO -  * Detected change in 'c:\\Users\\HP\\Documents\\Dagii\\week 10\\brent-price-change-analysis\\oil-price-dashboard\\backend\\app.py', reloading
+2025-02-25 21:44:09,431 - INFO -  * Restarting with stat
+2025-02-25 21:44:18,865 - INFO - Logging initialized.
+2025-02-25 21:44:18,865 - INFO - Loading LSTM model and scalers...
+2025-02-25 21:44:18,991 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 21:44:18,991 - INFO - Model and scalers loaded successfully.
+2025-02-25 21:44:18,991 - INFO - Loading datasets...
+2025-02-25 21:44:19,585 - INFO - Datasets loaded successfully.
+2025-02-25 21:44:19,585 - INFO - Starting Flask app.
+2025-02-25 21:44:19,618 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-25 21:44:19,619 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-25 21:44:19,620 - INFO -  * Restarting with stat
+2025-02-25 21:44:26,583 - INFO - Logging initialized.
+2025-02-25 21:44:26,583 - INFO - Loading LSTM model and scalers...
+2025-02-25 21:44:26,717 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 21:44:26,717 - INFO - Model and scalers loaded successfully.
+2025-02-25 21:44:26,717 - INFO - Loading datasets...
+2025-02-25 21:44:27,267 - INFO - Datasets loaded successfully.
+2025-02-25 21:44:27,267 - INFO - Starting Flask app.
+2025-02-25 21:44:27,284 - WARNING -  * Debugger is active!
+2025-02-25 21:44:27,290 - INFO -  * Debugger PIN: 105-113-212
+2025-02-25 21:44:31,412 - INFO - Calculating model performance metrics.
+2025-02-25 21:44:31,413 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:44:31,414 - INFO - 127.0.0.1 - - [25/Feb/2025 21:44:31] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:48:40,347 - INFO -  * Detected change in 'c:\\Users\\HP\\Documents\\Dagii\\week 10\\brent-price-change-analysis\\oil-price-dashboard\\backend\\app.py', reloading
+2025-02-25 21:48:41,152 - INFO -  * Restarting with stat
+2025-02-25 21:48:47,709 - INFO - Logging initialized.
+2025-02-25 21:48:47,710 - INFO - Loading LSTM model and scalers...
+2025-02-25 21:48:47,841 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 21:48:47,855 - INFO - Model and scalers loaded successfully.
+2025-02-25 21:48:47,855 - INFO - Loading datasets...
+2025-02-25 21:48:48,501 - INFO - Datasets loaded successfully.
+2025-02-25 21:48:48,511 - WARNING -  * Debugger is active!
+2025-02-25 21:48:48,522 - INFO -  * Debugger PIN: 105-113-212
+2025-02-25 21:49:16,267 - INFO - Calculating model performance metrics.
+2025-02-25 21:49:16,267 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:49:16,269 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:16] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:49:17,047 - INFO - Calculating model performance metrics.
+2025-02-25 21:49:17,047 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:49:17,047 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:17] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:49:17,285 - INFO - Calculating model performance metrics.
+2025-02-25 21:49:17,285 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:49:17,286 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:17] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:49:17,484 - INFO - Calculating model performance metrics.
+2025-02-25 21:49:17,484 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:49:17,484 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:17] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:49:17,700 - INFO - Calculating model performance metrics.
+2025-02-25 21:49:17,700 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:49:17,700 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:17] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:49:17,901 - INFO - Calculating model performance metrics.
+2025-02-25 21:49:17,901 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:49:17,901 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:17] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:49:18,102 - INFO - Calculating model performance metrics.
+2025-02-25 21:49:18,102 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:49:18,102 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:18] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:49:18,317 - INFO - Calculating model performance metrics.
+2025-02-25 21:49:18,317 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:49:18,317 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:18] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:49:19,978 - INFO - Calculating model performance metrics.
+2025-02-25 21:49:19,978 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:49:19,980 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:19] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:49:20,011 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:49:20,377 - INFO - Calculating model performance metrics.
+2025-02-25 21:49:20,377 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:49:20,377 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:20] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 21:49:20,428 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 21:49:25,349 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:25] "GET / HTTP/1.1" 200 -
+2025-02-25 21:49:31,087 - INFO - Calculating model performance metrics.
+2025-02-25 21:49:31,088 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 21:49:31,088 - INFO - 127.0.0.1 - - [25/Feb/2025 21:49:31] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
