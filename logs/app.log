@@ -784,3 +784,26 @@
 2025-02-25 22:18:55,321 - INFO - Received request for event analysis.
 2025-02-25 22:18:55,336 - INFO - Returning event analysis results.
 2025-02-25 22:18:55,336 - INFO - 127.0.0.1 - - [25/Feb/2025 22:18:55] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 19:36:21,025 - INFO - Logging initialized.
+2025-02-25 19:36:21,026 - INFO - Loading LSTM model and scalers...
+2025-02-25 19:36:21,239 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 19:36:21,251 - INFO - Model and scalers loaded successfully.
+2025-02-25 19:36:21,252 - INFO - Loading datasets...
+2025-02-25 19:36:21,892 - INFO - Datasets loaded successfully.
+2025-02-25 19:36:21,902 - INFO - Starting Flask app.
+2025-02-25 19:36:21,926 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-25 19:36:21,927 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-25 19:36:21,929 - INFO -  * Restarting with stat
+2025-02-25 19:36:30,159 - INFO - Logging initialized.
+2025-02-25 19:36:30,159 - INFO - Loading LSTM model and scalers...
+2025-02-25 19:36:30,325 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 19:36:30,342 - INFO - Model and scalers loaded successfully.
+2025-02-25 19:36:30,342 - INFO - Loading datasets...
+2025-02-25 19:36:30,979 - INFO - Datasets loaded successfully.
+2025-02-25 19:36:30,985 - INFO - Starting Flask app.
+2025-02-25 19:36:30,994 - WARNING -  * Debugger is active!
+2025-02-25 19:36:31,001 - INFO -  * Debugger PIN: 105-113-212
+2025-02-25 19:36:31,494 - INFO - Calculating model performance metrics.
+2025-02-25 19:36:31,495 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 19:36:31,498 - INFO - 127.0.0.1 - - [25/Feb/2025 19:36:31] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
