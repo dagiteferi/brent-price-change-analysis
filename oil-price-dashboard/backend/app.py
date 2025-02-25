@@ -3,7 +3,7 @@ from flask_cors import CORS
 import pandas as pd
 import joblib
 from tensorflow.keras.models import load_model
-from tensorflow.keras.metrics import MeanSquaredError  # Fix for 'mse' error
+from tensorflow.keras.metrics import MeanSquaredError
 import numpy as np
 from pathlib import Path
 import logging
@@ -41,7 +41,6 @@ y_scaler = None
 
 try:
     logger.info("Loading LSTM model and scalers...")
-    # Fix: Provide custom_objects for 'mse'
     model = load_model("models/lstm_model.h5", custom_objects={'mse': MeanSquaredError()})
     X_scaler = joblib.load("models/X_scaler.pkl")
     y_scaler = joblib.load("models/y_scaler.pkl")
@@ -219,15 +218,25 @@ def get_metrics():
     try:
         logger.info("Calculating model performance metrics.")
         
-        # Example: Replace y_true and y_pred with actual values
-        # These should be calculated during model evaluation
-        y_true = [68.91, 69.15, 68.42]  # Actual oil prices
-        y_pred = [68.95, 69.10, 68.50]  # Predicted oil prices
+        # Load or calculate actual and predicted values
+        # Replace this with your actual evaluation logic
+        y_true = []  # Actual oil prices from the test set
+        y_pred = []  # Predicted oil prices from the model
+
+        # Example: Evaluate the model on a test set
+        # X_test, y_true = load_test_data()  # Load test data
+        # y_pred = model.predict(X_test)  # Make predictions
+        # y_pred = y_scaler.inverse_transform(y_pred)  # Inverse transform if needed
 
         # Calculate metrics
-        rmse = mean_squared_error(y_true, y_pred, squared=False)
-        mae = mean_absolute_error(y_true, y_pred)
-        r2 = r2_score(y_true, y_pred)
+        if len(y_true) == 0 or len(y_pred) == 0:
+            logger.error("No evaluation data found.")
+            return jsonify({"error": "No evaluation data available. Please evaluate the model first."}), 404
+
+        mse = mean_squared_error(y_true, y_pred)  # Mean Squared Error
+        rmse = np.sqrt(mse)  # Root Mean Squared Error
+        mae = mean_absolute_error(y_true, y_pred)  # Mean Absolute Error
+        r2 = r2_score(y_true, y_pred)  # R-squared
 
         metrics = {
             "RMSE": rmse,
