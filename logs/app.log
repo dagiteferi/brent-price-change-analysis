@@ -1,0 +1,229 @@
+2025-02-25 15:47:01,085 - INFO - Logging initialized.
+2025-02-25 15:47:01,097 - INFO - Loading LSTM model and scalers...
+2025-02-25 15:47:01,338 - ERROR - Error loading model or scalers: Could not locate function 'mse'. Make sure custom classes are decorated with `@keras.saving.register_keras_serializable()`. Full object config: {'module': 'keras.metrics', 'class_name': 'function', 'config': 'mse', 'registered_name': 'mse'}
+2025-02-25 15:47:28,163 - INFO - Logging initialized.
+2025-02-25 15:47:28,167 - INFO - Loading LSTM model and scalers...
+2025-02-25 15:47:28,289 - ERROR - Error loading model or scalers: Could not locate function 'mse'. Make sure custom classes are decorated with `@keras.saving.register_keras_serializable()`. Full object config: {'module': 'keras.metrics', 'class_name': 'function', 'config': 'mse', 'registered_name': 'mse'}
+2025-02-25 15:51:50,936 - INFO - Logging initialized.
+2025-02-25 15:51:50,939 - INFO - Loading LSTM model and scalers...
+2025-02-25 15:51:51,094 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 15:51:51,150 - INFO - Model and scalers loaded successfully.
+2025-02-25 15:51:51,151 - INFO - Loading datasets...
+2025-02-25 15:51:51,843 - INFO - Datasets loaded successfully.
+2025-02-25 15:51:51,846 - INFO - Starting Flask app.
+2025-02-25 15:51:51,967 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-25 15:51:51,973 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-25 15:51:51,992 - INFO -  * Restarting with stat
+2025-02-25 15:51:58,577 - INFO - Logging initialized.
+2025-02-25 15:51:58,578 - INFO - Loading LSTM model and scalers...
+2025-02-25 15:51:58,707 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 15:51:58,721 - INFO - Model and scalers loaded successfully.
+2025-02-25 15:51:58,721 - INFO - Loading datasets...
+2025-02-25 15:51:59,233 - INFO - Datasets loaded successfully.
+2025-02-25 15:51:59,236 - INFO - Starting Flask app.
+2025-02-25 15:51:59,245 - WARNING -  * Debugger is active!
+2025-02-25 15:51:59,251 - INFO -  * Debugger PIN: 105-113-212
+2025-02-25 15:52:17,942 - INFO - 127.0.0.1 - - [25/Feb/2025 15:52:17] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-25 15:52:18,027 - INFO - 127.0.0.1 - - [25/Feb/2025 15:52:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 15:52:19,088 - INFO - 127.0.0.1 - - [25/Feb/2025 15:52:19] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-25 15:52:19,598 - INFO - 127.0.0.1 - - [25/Feb/2025 15:52:19] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-25 15:52:19,812 - INFO - 127.0.0.1 - - [25/Feb/2025 15:52:19] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-25 15:52:20,001 - INFO - 127.0.0.1 - - [25/Feb/2025 15:52:20] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-25 15:53:42,730 - INFO - 127.0.0.1 - - [25/Feb/2025 15:53:42] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-25 15:53:42,773 - INFO - 127.0.0.1 - - [25/Feb/2025 15:53:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 15:53:46,043 - INFO - 127.0.0.1 - - [25/Feb/2025 15:53:46] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-25 15:53:46,084 - INFO - 127.0.0.1 - - [25/Feb/2025 15:53:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 15:53:46,639 - INFO - 127.0.0.1 - - [25/Feb/2025 15:53:46] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-25 15:53:46,691 - INFO - 127.0.0.1 - - [25/Feb/2025 15:53:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 15:53:46,885 - INFO - 127.0.0.1 - - [25/Feb/2025 15:53:46] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-25 15:53:46,936 - INFO - 127.0.0.1 - - [25/Feb/2025 15:53:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 15:55:20,124 - INFO - Received request for historical data.
+2025-02-25 15:55:20,125 - INFO - Returning filtered data.
+2025-02-25 15:55:20,583 - INFO - 127.0.0.1 - - [25/Feb/2025 15:55:20] "GET /api/data HTTP/1.1" 200 -
+2025-02-25 15:55:21,241 - INFO - 127.0.0.1 - - [25/Feb/2025 15:55:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 15:56:39,003 - INFO - Received request for event analysis.
+2025-02-25 15:56:39,059 - INFO - Returning event analysis results.
+2025-02-25 15:56:39,060 - INFO - 127.0.0.1 - - [25/Feb/2025 15:56:39] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 15:56:54,494 - INFO - 127.0.0.1 - - [25/Feb/2025 15:56:54] "[31m[1mGET /api/predict HTTP/1.1[0m" 405 -
+2025-02-25 15:57:12,078 - INFO - Calculating model performance metrics.
+2025-02-25 15:57:12,079 - ERROR - Error in /api/metrics: got an unexpected keyword argument 'squared'
+2025-02-25 15:57:12,080 - INFO - 127.0.0.1 - - [25/Feb/2025 15:57:12] "[35m[1mGET /api/metrics HTTP/1.1[0m" 500 -
+2025-02-25 15:57:53,065 - INFO -  * Detected change in 'c:\\Users\\HP\\Documents\\Dagii\\week 10\\brent-price-change-analysis\\oil-price-dashboard\\backend\\app.py', reloading
+2025-02-25 15:57:54,068 - INFO -  * Restarting with stat
+2025-02-25 15:58:11,736 - INFO - Logging initialized.
+2025-02-25 15:58:11,737 - INFO - Loading LSTM model and scalers...
+2025-02-25 15:58:11,944 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 15:58:11,966 - INFO - Model and scalers loaded successfully.
+2025-02-25 15:58:11,969 - INFO - Loading datasets...
+2025-02-25 15:58:12,696 - INFO - Datasets loaded successfully.
+2025-02-25 15:58:12,702 - INFO - Starting Flask app.
+2025-02-25 15:58:12,733 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-25 15:58:12,734 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-25 15:58:12,737 - INFO -  * Restarting with stat
+2025-02-25 15:58:21,652 - INFO - Logging initialized.
+2025-02-25 15:58:21,653 - INFO - Loading LSTM model and scalers...
+2025-02-25 15:58:21,949 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 15:58:21,974 - INFO - Model and scalers loaded successfully.
+2025-02-25 15:58:21,974 - INFO - Loading datasets...
+2025-02-25 15:58:23,357 - INFO - Datasets loaded successfully.
+2025-02-25 15:58:23,363 - INFO - Starting Flask app.
+2025-02-25 15:58:23,385 - WARNING -  * Debugger is active!
+2025-02-25 15:58:23,406 - INFO -  * Debugger PIN: 105-113-212
+2025-02-25 15:58:24,150 - INFO - Calculating model performance metrics.
+2025-02-25 15:58:24,150 - ERROR - Error in /api/metrics: got an unexpected keyword argument 'squared'
+2025-02-25 15:58:24,150 - INFO - 127.0.0.1 - - [25/Feb/2025 15:58:24] "GET / HTTP/1.1" 200 -
+2025-02-25 15:58:24,150 - INFO - 127.0.0.1 - - [25/Feb/2025 15:58:24] "[35m[1mGET /api/metrics HTTP/1.1[0m" 500 -
+2025-02-25 15:58:29,593 - INFO - 127.0.0.1 - - [25/Feb/2025 15:58:29] "GET / HTTP/1.1" 200 -
+2025-02-25 16:07:44,396 - INFO -  * Detected change in 'c:\\Users\\HP\\Documents\\Dagii\\week 10\\brent-price-change-analysis\\oil-price-dashboard\\backend\\app.py', reloading
+2025-02-25 16:07:44,929 - INFO -  * Restarting with stat
+2025-02-25 16:07:49,747 - INFO - Logging initialized.
+2025-02-25 16:07:49,747 - INFO - Loading LSTM model and scalers...
+2025-02-25 16:07:49,848 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 16:07:49,865 - INFO - Model and scalers loaded successfully.
+2025-02-25 16:07:49,865 - INFO - Loading datasets...
+2025-02-25 16:07:50,366 - INFO - Datasets loaded successfully.
+2025-02-25 16:07:50,367 - INFO - Starting Flask app.
+2025-02-25 16:07:50,367 - WARNING -  * Debugger is active!
+2025-02-25 16:07:50,379 - INFO -  * Debugger PIN: 105-113-212
+2025-02-25 16:07:52,436 - INFO - 127.0.0.1 - - [25/Feb/2025 16:07:52] "GET / HTTP/1.1" 200 -
+2025-02-25 16:07:52,487 - INFO - 127.0.0.1 - - [25/Feb/2025 16:07:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 16:08:19,059 - INFO -  * Detected change in 'c:\\Users\\HP\\Documents\\Dagii\\week 10\\brent-price-change-analysis\\oil-price-dashboard\\backend\\app.py', reloading
+2025-02-25 16:08:19,639 - INFO -  * Restarting with stat
+2025-02-25 16:08:24,810 - INFO - Logging initialized.
+2025-02-25 16:08:24,810 - INFO - Loading LSTM model and scalers...
+2025-02-25 16:08:24,960 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 16:08:24,960 - INFO - Model and scalers loaded successfully.
+2025-02-25 16:08:24,960 - INFO - Loading datasets...
+2025-02-25 16:08:25,443 - INFO - Datasets loaded successfully.
+2025-02-25 16:08:25,443 - INFO - Starting Flask app.
+2025-02-25 16:08:25,443 - WARNING -  * Debugger is active!
+2025-02-25 16:08:25,460 - INFO -  * Debugger PIN: 105-113-212
+2025-02-25 16:08:27,829 - INFO - 127.0.0.1 - - [25/Feb/2025 16:08:27] "GET / HTTP/1.1" 200 -
+2025-02-25 16:08:27,865 - INFO - 127.0.0.1 - - [25/Feb/2025 16:08:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 16:08:42,885 - INFO - Received request for historical data.
+2025-02-25 16:08:42,886 - INFO - Returning filtered data.
+2025-02-25 16:08:43,056 - INFO - 127.0.0.1 - - [25/Feb/2025 16:08:43] "GET /api/data HTTP/1.1" 200 -
+2025-02-25 16:09:10,497 - INFO - Received request for event analysis.
+2025-02-25 16:09:10,531 - INFO - Returning event analysis results.
+2025-02-25 16:09:10,531 - INFO - 127.0.0.1 - - [25/Feb/2025 16:09:10] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 16:09:32,265 - INFO - 127.0.0.1 - - [25/Feb/2025 16:09:32] "[31m[1mGET /api/predict HTTP/1.1[0m" 405 -
+2025-02-25 16:09:48,705 - INFO - Calculating model performance metrics.
+2025-02-25 16:09:48,706 - ERROR - Error in /api/metrics: got an unexpected keyword argument 'squared'
+2025-02-25 16:09:48,707 - INFO - 127.0.0.1 - - [25/Feb/2025 16:09:48] "[35m[1mGET /api/metrics HTTP/1.1[0m" 500 -
+2025-02-25 16:10:39,252 - INFO - Calculating model performance metrics.
+2025-02-25 16:10:39,253 - ERROR - Error in /api/metrics: got an unexpected keyword argument 'squared'
+2025-02-25 16:10:39,254 - INFO - 127.0.0.1 - - [25/Feb/2025 16:10:39] "[35m[1mGET /api/metrics HTTP/1.1[0m" 500 -
+2025-02-25 16:10:55,110 - INFO - 127.0.0.1 - - [25/Feb/2025 16:10:55] "[31m[1mGET /api/predict HTTP/1.1[0m" 405 -
+2025-02-25 18:52:00,834 - INFO - Logging initialized.
+2025-02-25 18:52:00,834 - INFO - Loading LSTM model and scalers...
+2025-02-25 18:52:01,230 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 18:52:01,270 - INFO - Model and scalers loaded successfully.
+2025-02-25 18:52:01,270 - INFO - Loading datasets...
+2025-02-25 18:52:02,645 - INFO - Datasets loaded successfully.
+2025-02-25 18:52:02,651 - INFO - Starting Flask app.
+2025-02-25 18:52:02,766 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-25 18:52:02,767 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-25 18:52:02,772 - INFO -  * Restarting with stat
+2025-02-25 18:52:09,804 - INFO - Logging initialized.
+2025-02-25 18:52:09,805 - INFO - Loading LSTM model and scalers...
+2025-02-25 18:52:09,990 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 18:52:10,003 - INFO - Model and scalers loaded successfully.
+2025-02-25 18:52:10,004 - INFO - Loading datasets...
+2025-02-25 18:52:10,751 - INFO - Datasets loaded successfully.
+2025-02-25 18:52:10,755 - INFO - Starting Flask app.
+2025-02-25 18:52:10,764 - WARNING -  * Debugger is active!
+2025-02-25 18:52:10,773 - INFO -  * Debugger PIN: 105-113-212
+2025-02-25 18:52:11,196 - INFO - Received request for event analysis.
+2025-02-25 18:52:11,236 - INFO - Returning event analysis results.
+2025-02-25 18:52:11,238 - INFO - 127.0.0.1 - - [25/Feb/2025 18:52:11] "GET /api/events HTTP/1.1" 200 -
+2025-02-25 18:52:11,298 - INFO - 127.0.0.1 - - [25/Feb/2025 18:52:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-25 18:52:28,909 - INFO - Calculating model performance metrics.
+2025-02-25 18:52:28,909 - ERROR - No evaluation data found.
+2025-02-25 18:52:28,909 - INFO - 127.0.0.1 - - [25/Feb/2025 18:52:28] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 18:56:32,488 - INFO -  * Detected change in 'c:\\Users\\HP\\Documents\\Dagii\\week 10\\brent-price-change-analysis\\oil-price-dashboard\\backend\\app.py', reloading
+2025-02-25 18:56:33,417 - INFO -  * Restarting with stat
+2025-02-25 18:56:46,510 - INFO - Logging initialized.
+2025-02-25 18:56:46,511 - INFO - Loading LSTM model and scalers...
+2025-02-25 18:56:46,814 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 18:56:46,831 - INFO - Model and scalers loaded successfully.
+2025-02-25 18:56:46,833 - INFO - Loading datasets...
+2025-02-25 18:56:47,660 - INFO - Datasets loaded successfully.
+2025-02-25 18:56:47,672 - INFO - Starting Flask app.
+2025-02-25 18:56:47,684 - WARNING -  * Debugger is active!
+2025-02-25 18:56:47,690 - INFO -  * Debugger PIN: 105-113-212
+2025-02-25 19:31:06,891 - INFO - Logging initialized.
+2025-02-25 19:31:06,894 - INFO - Loading LSTM model and scalers...
+2025-02-25 19:31:07,065 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 19:31:07,078 - INFO - Model and scalers loaded successfully.
+2025-02-25 19:31:07,080 - INFO - Loading datasets...
+2025-02-25 19:31:07,829 - INFO - Datasets loaded successfully.
+2025-02-25 19:31:07,834 - INFO - Starting Flask app.
+2025-02-25 19:31:07,858 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-25 19:31:07,860 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-25 19:31:07,863 - INFO -  * Restarting with stat
+2025-02-25 19:31:16,032 - INFO - Logging initialized.
+2025-02-25 19:31:16,033 - INFO - Loading LSTM model and scalers...
+2025-02-25 19:31:16,200 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 19:31:16,211 - INFO - Model and scalers loaded successfully.
+2025-02-25 19:31:16,211 - INFO - Loading datasets...
+2025-02-25 19:31:16,912 - INFO - Datasets loaded successfully.
+2025-02-25 19:31:16,915 - INFO - Starting Flask app.
+2025-02-25 19:31:16,926 - WARNING -  * Debugger is active!
+2025-02-25 19:31:16,938 - INFO -  * Debugger PIN: 105-113-212
+2025-02-25 19:31:19,247 - INFO - Calculating model performance metrics.
+2025-02-25 19:31:19,248 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 19:31:19,250 - INFO - 127.0.0.1 - - [25/Feb/2025 19:31:19] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 19:31:20,883 - INFO - Calculating model performance metrics.
+2025-02-25 19:31:20,884 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 19:31:20,884 - INFO - 127.0.0.1 - - [25/Feb/2025 19:31:20] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 19:31:21,845 - INFO - Calculating model performance metrics.
+2025-02-25 19:31:21,846 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 19:31:21,848 - INFO - 127.0.0.1 - - [25/Feb/2025 19:31:21] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 19:31:22,034 - INFO - Calculating model performance metrics.
+2025-02-25 19:31:22,034 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 19:31:22,036 - INFO - 127.0.0.1 - - [25/Feb/2025 19:31:22] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 19:31:22,232 - INFO - Calculating model performance metrics.
+2025-02-25 19:31:22,233 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 19:31:22,235 - INFO - 127.0.0.1 - - [25/Feb/2025 19:31:22] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 19:31:22,412 - INFO - Calculating model performance metrics.
+2025-02-25 19:31:22,413 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 19:31:22,414 - INFO - 127.0.0.1 - - [25/Feb/2025 19:31:22] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 19:31:35,840 - INFO - Calculating model performance metrics.
+2025-02-25 19:31:35,841 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 19:31:35,843 - INFO - 127.0.0.1 - - [25/Feb/2025 19:31:35] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 19:32:13,165 - INFO - Calculating model performance metrics.
+2025-02-25 19:32:13,166 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 19:32:13,167 - INFO - 127.0.0.1 - - [25/Feb/2025 19:32:13] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 19:32:13,508 - INFO - Calculating model performance metrics.
+2025-02-25 19:32:13,509 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 19:32:13,510 - INFO - 127.0.0.1 - - [25/Feb/2025 19:32:13] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 19:32:13,678 - INFO - Calculating model performance metrics.
+2025-02-25 19:32:13,679 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 19:32:13,680 - INFO - 127.0.0.1 - - [25/Feb/2025 19:32:13] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
+2025-02-25 19:36:21,025 - INFO - Logging initialized.
+2025-02-25 19:36:21,026 - INFO - Loading LSTM model and scalers...
+2025-02-25 19:36:21,239 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 19:36:21,251 - INFO - Model and scalers loaded successfully.
+2025-02-25 19:36:21,252 - INFO - Loading datasets...
+2025-02-25 19:36:21,892 - INFO - Datasets loaded successfully.
+2025-02-25 19:36:21,902 - INFO - Starting Flask app.
+2025-02-25 19:36:21,926 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-25 19:36:21,927 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-25 19:36:21,929 - INFO -  * Restarting with stat
+2025-02-25 19:36:30,159 - INFO - Logging initialized.
+2025-02-25 19:36:30,159 - INFO - Loading LSTM model and scalers...
+2025-02-25 19:36:30,325 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-25 19:36:30,342 - INFO - Model and scalers loaded successfully.
+2025-02-25 19:36:30,342 - INFO - Loading datasets...
+2025-02-25 19:36:30,979 - INFO - Datasets loaded successfully.
+2025-02-25 19:36:30,985 - INFO - Starting Flask app.
+2025-02-25 19:36:30,994 - WARNING -  * Debugger is active!
+2025-02-25 19:36:31,001 - INFO -  * Debugger PIN: 105-113-212
+2025-02-25 19:36:31,494 - INFO - Calculating model performance metrics.
+2025-02-25 19:36:31,495 - ERROR - Evaluation results not found. Please train and evaluate the model first.
+2025-02-25 19:36:31,498 - INFO - 127.0.0.1 - - [25/Feb/2025 19:36:31] "[33mGET /api/metrics HTTP/1.1[0m" 404 -
