@@ -161,14 +161,18 @@ The aim of this project is to analyze Brent oil price fluctuations by detecting 
 ```
 3. **Run the Flask Backend**
 ```bash
-   ------
+   cd dashboard/backend
+  flask run
 
 ```
+The backend should now be running on http://127.0.0.1:5000/.
 4. **Start the React Frontend**
    ```bash
-   -----
-   ```
+ cd dashboard/frontend
+npm start
 
+   ```
+The frontend should now be running on http://localhost:3000/
 
 
 **Contributing 🤝**
