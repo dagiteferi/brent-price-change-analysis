@@ -140,14 +140,6 @@ The aim of this project is to analyze Brent oil price fluctuations by detecting 
   ```
 
 
-## Results & Insights 🏆
-
----------------------
-
-## References & Further Reading 📚
-
--
-
 ## How to Run the Project 🚀
 
 1. **Clone the Repository**
