@@ -201,7 +201,65 @@ The aim of this project is to analyze Brent oil price fluctuations by detecting 
 
 
   ```bash
-------------------------
+    Directory structure:
+└── dagiteferi-brent-price-change-analysis/
+    ├── README.md
+    ├── file_structure.py
+    ├── requirements.txt
+    ├── docs/
+    │   └── data_analysis_workflow.md
+    ├── logs/
+    ├── models/
+    │   ├── X_scaler.pkl
+    │   ├── lstm_model.h5
+    │   └── y_scaler.pkl
+    ├── notebooks/
+    │   ├── README.md
+    │   ├── __init__.py
+    │   ├── changepointanalysis.ipynb
+    │   ├── eda.ipynb
+    │   └── logs/
+    ├── oil-price-dashboard/
+    │   ├── backend/
+    │   │   ├── app.py
+    │   │   └── evaluation_results.pkl
+    │   └── frontend/
+    │       ├── README.md
+    │       ├── README.old.md
+    │       ├── package-lock.json
+    │       ├── package.json
+    │       ├── .gitignore
+    │       ├── public/
+    │       │   ├── index.html
+    │       │   ├── manifest.json
+    │       │   └── robots.txt
+    │       └── src/
+    │           ├── App.css
+    │           ├── App.js
+    │           ├── App.test.js
+    │           ├── index.css
+    │           ├── index.js
+    │           ├── reportWebVitals.js
+    │           └── setupTests.js
+    ├── scripts/
+    │   ├── README.md
+    │   ├── AdaptingModel.py
+    │   ├── __init__.py
+    │   ├── analyzer.py
+    │   ├── eda.py
+    │   ├── logger.py
+    │   ├── oil_price_analysis.py
+    │   └── visualizer.py
+    ├── src/
+    │   ├── __init__.py
+    │   ├── data_loading.py
+    │   └── fetcher.py
+    ├── tests/
+    │   └── __init__.py
+    └── .github/
+        └── workflows/
+            └── unittests.yml
+
   ```
 
 
